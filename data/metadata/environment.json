@@ -1,0 +1,47 @@
+{
+    "messages":  [
+
+                 ],
+    "generated_at_utc":  "2026-09-29T18:51:17.5609586Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "version":  "Microsoft SQL Server 2025 (RTM) - 17.0.1000.7 (X64) \n\tOct 21 2025 12:05:57 \n\tCopyright (C) 2025 Microsoft Corporation\n\tExpress Edition (64-bit) on Windows 10 Home Single Language 10.0 \u003cX64\u003e (Build 26200: ) (Hypervisor)\n",
+                                         "edition":  "Express Edition (64-bit)",
+                                         "product_version":  "17.0.1000.7"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "name":  "WWI_Portfolio_Diagnostic",
+                                         "state_desc":  "ONLINE",
+                                         "compatibility_level":  130,
+                                         "recovery_model_desc":  "SIMPLE"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "name":  "max degree of parallelism",
+                                         "value_in_use":  1
+                                     },
+                                     {
+                                         "name":  "max server memory (MB)",
+                                         "value_in_use":  512
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "captured_at":  "\/Date(1790707877494)\/"
+                                     }
+                                 ]
+                    }
+                ],
+    "database":  "WWI_Portfolio_Diagnostic"
+}

@@ -1,0 +1,291 @@
+{
+    "messages":  [
+
+                 ],
+    "generated_at_utc":  "2026-09-29T18:40:06.1236188Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "negative_profit",
+                                         "lines":  4626,
+                                         "invoices":  4494,
+                                         "products":  18,
+                                         "sales_ex_tax":  4962959.45,
+                                         "negative_profit_total":  -320493.55
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  1,
+                                         "StockItemName":  "USB missile launcher (Green)",
+                                         "lines":  40,
+                                         "min_price":  2.50,
+                                         "max_price":  3.75,
+                                         "LastCostPrice":  9.50,
+                                         "negative_profit_total":  -1554.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  2,
+                                         "StockItemName":  "USB rocket launcher (Gray)",
+                                         "lines":  35,
+                                         "min_price":  2.50,
+                                         "max_price":  3.75,
+                                         "LastCostPrice":  9.50,
+                                         "negative_profit_total":  -1390.25
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  4,
+                                         "StockItemName":  "USB food flash drive - sushi roll",
+                                         "lines":  46,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1732.80
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  5,
+                                         "StockItemName":  "USB food flash drive - hamburger",
+                                         "lines":  29,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1032.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  6,
+                                         "StockItemName":  "USB food flash drive - hot dog",
+                                         "lines":  39,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1615.20
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  7,
+                                         "StockItemName":  "USB food flash drive - pizza slice",
+                                         "lines":  31,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1211.20
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  8,
+                                         "StockItemName":  "USB food flash drive - dim sum 10 drive variety pack",
+                                         "lines":  38,
+                                         "min_price":  24.00,
+                                         "max_price":  36.00,
+                                         "LastCostPrice":  88.50,
+                                         "negative_profit_total":  -13053.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  9,
+                                         "StockItemName":  "USB food flash drive - banana",
+                                         "lines":  36,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1589.60
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  10,
+                                         "StockItemName":  "USB food flash drive - chocolate bar",
+                                         "lines":  41,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1676.80
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  11,
+                                         "StockItemName":  "USB food flash drive - cookie",
+                                         "lines":  28,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1178.40
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  12,
+                                         "StockItemName":  "USB food flash drive - donut",
+                                         "lines":  38,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1652.80
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  13,
+                                         "StockItemName":  "USB food flash drive - shrimp cocktail",
+                                         "lines":  41,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -2019.20
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  14,
+                                         "StockItemName":  "USB food flash drive - fortune cookie",
+                                         "lines":  27,
+                                         "min_price":  3.20,
+                                         "max_price":  4.80,
+                                         "LastCostPrice":  12.00,
+                                         "negative_profit_total":  -1124.80
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  15,
+                                         "StockItemName":  "USB food flash drive - dessert 10 drive variety pack",
+                                         "lines":  43,
+                                         "min_price":  24.00,
+                                         "max_price":  36.00,
+                                         "LastCostPrice":  88.50,
+                                         "negative_profit_total":  -15163.50
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  142,
+                                         "StockItemName":  "Halloween zombie mask (Light Brown) S",
+                                         "lines":  1044,
+                                         "min_price":  18.00,
+                                         "max_price":  18.00,
+                                         "LastCostPrice":  19.00,
+                                         "negative_profit_total":  -71016.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  143,
+                                         "StockItemName":  "Halloween zombie mask (Light Brown) M",
+                                         "lines":  1017,
+                                         "min_price":  18.00,
+                                         "max_price":  18.00,
+                                         "LastCostPrice":  19.00,
+                                         "negative_profit_total":  -67008.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  144,
+                                         "StockItemName":  "Halloween zombie mask (Light Brown) L",
+                                         "lines":  982,
+                                         "min_price":  18.00,
+                                         "max_price":  18.00,
+                                         "LastCostPrice":  19.00,
+                                         "negative_profit_total":  -64104.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_products",
+                                         "StockItemID":  145,
+                                         "StockItemName":  "Halloween zombie mask (Light Brown) XL",
+                                         "lines":  1071,
+                                         "min_price":  18.00,
+                                         "max_price":  18.00,
+                                         "LastCostPrice":  19.00,
+                                         "negative_profit_total":  -72372.00
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "negative_profit_examples",
+                                         "InvoiceLineID":  43,
+                                         "InvoiceID":  21,
+                                         "StockItemID":  144,
+                                         "Quantity":  24,
+                                         "UnitPrice":  18.00,
+                                         "TaxRate":  15.000,
+                                         "TaxAmount":  64.80,
+                                         "ExtendedPrice":  496.80,
+                                         "LineProfit":  -24.00,
+                                         "LastCostPrice":  19.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_examples",
+                                         "InvoiceLineID":  173,
+                                         "InvoiceID":  86,
+                                         "StockItemID":  145,
+                                         "Quantity":  72,
+                                         "UnitPrice":  18.00,
+                                         "TaxRate":  15.000,
+                                         "TaxAmount":  194.40,
+                                         "ExtendedPrice":  1490.40,
+                                         "LineProfit":  -72.00,
+                                         "LastCostPrice":  19.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_examples",
+                                         "InvoiceLineID":  196,
+                                         "InvoiceID":  94,
+                                         "StockItemID":  142,
+                                         "Quantity":  12,
+                                         "UnitPrice":  18.00,
+                                         "TaxRate":  15.000,
+                                         "TaxAmount":  32.40,
+                                         "ExtendedPrice":  248.40,
+                                         "LineProfit":  -12.00,
+                                         "LastCostPrice":  19.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_examples",
+                                         "InvoiceLineID":  445,
+                                         "InvoiceID":  189,
+                                         "StockItemID":  142,
+                                         "Quantity":  48,
+                                         "UnitPrice":  18.00,
+                                         "TaxRate":  15.000,
+                                         "TaxAmount":  129.60,
+                                         "ExtendedPrice":  993.60,
+                                         "LineProfit":  -48.00,
+                                         "LastCostPrice":  19.00
+                                     },
+                                     {
+                                         "section":  "negative_profit_examples",
+                                         "InvoiceLineID":  535,
+                                         "InvoiceID":  231,
+                                         "StockItemID":  143,
+                                         "Quantity":  96,
+                                         "UnitPrice":  18.00,
+                                         "TaxRate":  15.000,
+                                         "TaxAmount":  259.20,
+                                         "ExtendedPrice":  1987.20,
+                                         "LineProfit":  -96.00,
+                                         "LastCostPrice":  19.00
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "temporal_customers_at_invoice",
+                                         "joined_documents":  70510,
+                                         "invoices":  70510,
+                                         "no_valid_version":  0,
+                                         "different_city":  0,
+                                         "different_category":  0
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+
+                                 ]
+                    }
+                ],
+    "database":  "WWI_Portfolio_Diagnostic"
+}

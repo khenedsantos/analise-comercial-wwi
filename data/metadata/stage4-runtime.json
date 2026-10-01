@@ -1,0 +1,382 @@
+{
+    "messages":  [
+
+                 ],
+    "generated_at_utc":  "2026-09-30T15:05:48.0656155Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "status":  "running",
+                                         "command":  "SELECT",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  78001
+                                     },
+                                     {
+                                         "session_id":  52,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  53,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  54,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  55,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  56,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  57,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  58,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  59,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  60,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  61,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  62,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  63,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  66,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  67,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  68,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  69,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  70,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  71,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  72,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  73,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  74,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  75,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  76,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  77,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  78,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  79,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  80,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  81,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  82,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  83,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  84,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  86,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  87,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "total_physical_memory_kb":  8158984,
+                                         "available_physical_memory_kb":  809256,
+                                         "system_memory_state_desc":  "Physical memory usage is steady"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "requested_memory_kb":  1536,
+                                         "required_memory_kb":  1536,
+                                         "granted_memory_kb":  1536,
+                                         "wait_time_ms":  null,
+                                         "dop":  1
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "current_statement":  "SELECT @an=COUNT_BIG(*),@av=COALESCE(SUM(SalesExTax),0),@at=COALESCE(SUM(TaxAmount),0),@ab=COALESCE(SUM(ExtendedPrice),0),@al=COALESCE(SUM(LineProfit),0) FROM analytics.SelectedLines(@filter) OPTION(RECOMPILE,MAX_GRANT_PERCENT=1)"
+                                     }
+                                 ]
+                    }
+                ],
+    "database":  "WWI_Portfolio_Diagnostic"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "Test": "Runner accepts PASS",
+    "Passed": true
+  },
+  {
+    "Test": "Runner rejects FAIL",
+    "Passed": true
+  },
+  {
+    "Test": "Runner rejects missing assertions",
+    "Passed": true
+  }
+]

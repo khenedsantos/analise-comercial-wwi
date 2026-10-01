@@ -1,0 +1,404 @@
+{
+    "messages":  [
+                     "Warning: Null value is eliminated by an aggregate or other SET operation.",
+                     "Warning: Null value is eliminated by an aggregate or other SET operation."
+                 ],
+    "generated_at_utc":  "2026-09-29T18:39:59.8895900Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "access",
+                                         "is_sysadmin":  1,
+                                         "database_user":  "dbo"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "rls",
+                                         "name":  "FilterCustomersBySalesTerritoryRole",
+                                         "is_enabled":  true,
+                                         "predicate_definition":  "([Application].[DetermineCustomerAccess]([DeliveryCityID]))"
+                                     },
+                                     {
+                                         "section":  "rls",
+                                         "name":  "FilterCustomersBySalesTerritoryRole",
+                                         "is_enabled":  true,
+                                         "predicate_definition":  "([Application].[DetermineCustomerAccess]([DeliveryCityID]))"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "price_variation",
+                                         "sold_products":  227,
+                                         "products_multiple_prices":  14,
+                                         "products_multiple_implied_costs":  0,
+                                         "min_price_count":  1,
+                                         "max_price_count":  3
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  9,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  15,
+                                         "prices":  3,
+                                         "min_price":  24.00,
+                                         "max_price":  240.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  12,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  6,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  7,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  1,
+                                         "prices":  3,
+                                         "min_price":  2.50,
+                                         "max_price":  25.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  10,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  4,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  13,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  5,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  2,
+                                         "prices":  3,
+                                         "min_price":  2.50,
+                                         "max_price":  25.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  11,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  14,
+                                         "prices":  3,
+                                         "min_price":  3.20,
+                                         "max_price":  32.00,
+                                         "packages":  1
+                                     },
+                                     {
+                                         "section":  "product_price_details",
+                                         "StockItemID":  8,
+                                         "prices":  3,
+                                         "min_price":  24.00,
+                                         "max_price":  240.00,
+                                         "packages":  1
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "special_deals",
+                                         "SpecialDealID":  1,
+                                         "StockItemID":  null,
+                                         "CustomerID":  null,
+                                         "BuyingGroupID":  2,
+                                         "CustomerCategoryID":  null,
+                                         "StockGroupID":  7,
+                                         "DealDescription":  "10% 1st qtr USB Wingtip",
+                                         "StartDate":  "2016-01-01T00:00:00.0000000",
+                                         "EndDate":  "2016-03-31T00:00:00.0000000",
+                                         "DiscountAmount":  null,
+                                         "DiscountPercentage":  10.000,
+                                         "UnitPrice":  null
+                                     },
+                                     {
+                                         "section":  "special_deals",
+                                         "SpecialDealID":  2,
+                                         "StockItemID":  null,
+                                         "CustomerID":  null,
+                                         "BuyingGroupID":  1,
+                                         "CustomerCategoryID":  null,
+                                         "StockGroupID":  7,
+                                         "DealDescription":  "15% 2nd qtr USB Tailspin",
+                                         "StartDate":  "2016-04-01T00:00:00.0000000",
+                                         "EndDate":  "2016-06-30T00:00:00.0000000",
+                                         "DiscountAmount":  null,
+                                         "DiscountPercentage":  15.000,
+                                         "UnitPrice":  null
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "temporal_customer_changes",
+                                         "archived_customers":  46,
+                                         "changed_delivery_city":  0,
+                                         "changed_category":  0,
+                                         "changed_buying_group":  0
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "temporal_coverage",
+                                         "entity":  "Customers",
+                                         "earliest_valid_from":  "2013-01-01T00:00:00.0000000",
+                                         "last_closed_valid_to":  "2015-07-01T16:00:00.0000000"
+                                     },
+                                     {
+                                         "section":  "temporal_coverage",
+                                         "entity":  "StockItems",
+                                         "earliest_valid_from":  "2013-01-01T00:00:00.0000000",
+                                         "last_closed_valid_to":  "2016-05-31T23:12:00.0000000"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "geography_population",
+                                         "cities_missing_population":  11048,
+                                         "all_reference_cities":  37940
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "invoice_boundary",
+                                         "first_date":  "2013-01-01T00:00:00.0000000",
+                                         "last_date":  "2016-05-31T00:00:00.0000000",
+                                         "first_lastedit":  "2013-01-02T07:00:00.0000000",
+                                         "last_lastedit":  "2016-05-31T12:00:00.0000000"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "order_line_join_risk",
+                                         "naive_join_rows":  847091,
+                                         "invoice_lines_matched":  228265
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "product_attributes",
+                                         "Brand":  null,
+                                         "products":  209
+                                     },
+                                     {
+                                         "section":  "product_attributes",
+                                         "Brand":  "Northwind",
+                                         "products":  18
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "customer_billing",
+                                         "buying_customers":  663,
+                                         "billing_customers":  263
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Application.Cities",
+                                         "total_rows":  37940,
+                                         "distinct_pk":  37940,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Application.Countries",
+                                         "total_rows":  190,
+                                         "distinct_pk":  190,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Application.People",
+                                         "total_rows":  1111,
+                                         "distinct_pk":  1111,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Application.StateProvinces",
+                                         "total_rows":  53,
+                                         "distinct_pk":  53,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.BuyingGroups",
+                                         "total_rows":  2,
+                                         "distinct_pk":  2,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.CustomerCategories",
+                                         "total_rows":  8,
+                                         "distinct_pk":  8,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.Customers",
+                                         "total_rows":  663,
+                                         "distinct_pk":  663,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.CustomerTransactions",
+                                         "total_rows":  97147,
+                                         "distinct_pk":  97147,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.InvoiceLines",
+                                         "total_rows":  228265,
+                                         "distinct_pk":  228265,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.Invoices",
+                                         "total_rows":  70510,
+                                         "distinct_pk":  70510,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.OrderLines",
+                                         "total_rows":  231412,
+                                         "distinct_pk":  231412,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Sales.Orders",
+                                         "total_rows":  73595,
+                                         "distinct_pk":  73595,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Warehouse.PackageTypes",
+                                         "total_rows":  14,
+                                         "distinct_pk":  14,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Warehouse.StockGroups",
+                                         "total_rows":  10,
+                                         "distinct_pk":  10,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Warehouse.StockItemHoldings",
+                                         "total_rows":  227,
+                                         "distinct_pk":  227,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Warehouse.StockItems",
+                                         "total_rows":  227,
+                                         "distinct_pk":  227,
+                                         "null_pk":  0
+                                     },
+                                     {
+                                         "section":  "pk_actual",
+                                         "table_name":  "Warehouse.StockItemStockGroups",
+                                         "total_rows":  442,
+                                         "distinct_pk":  442,
+                                         "null_pk":  0
+                                     }
+                                 ]
+                    }
+                ],
+    "database":  "WWI_Portfolio_Diagnostic"
+}

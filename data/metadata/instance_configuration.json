@@ -1,0 +1,23 @@
+{
+    "messages":  [
+                     "Configuration option \u0027show advanced options\u0027 changed from 0 to 1. Run the RECONFIGURE statement to install.",
+                     "Configuration option \u0027max degree of parallelism\u0027 changed from 0 to 1. Run the RECONFIGURE statement to install.",
+                     "Configuration option \u0027max server memory (MB)\u0027 changed from 2147483647 to 512. Run the RECONFIGURE statement to install."
+                 ],
+    "generated_at_utc":  "2026-09-29T18:28:37.1103504Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "name":  "max degree of parallelism",
+                                         "value_in_use":  1
+                                     },
+                                     {
+                                         "name":  "max server memory (MB)",
+                                         "value_in_use":  512
+                                     }
+                                 ]
+                    }
+                ],
+    "database":  "master"
+}

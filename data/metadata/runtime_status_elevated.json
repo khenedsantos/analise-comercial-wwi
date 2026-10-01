@@ -1,0 +1,92 @@
+{
+    "messages":  [
+
+                 ],
+    "generated_at_utc":  "2026-09-29T18:38:26.4745919Z",
+    "results":  [
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "status":  "suspended",
+                                         "command":  "SELECT",
+                                         "wait_type":  "RESOURCE_SEMAPHORE",
+                                         "wait_time":  121767,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  126928
+                                     },
+                                     {
+                                         "session_id":  54,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  1
+                                     },
+                                     {
+                                         "session_id":  67,
+                                         "status":  "sleeping",
+                                         "command":  "TASK MANAGER",
+                                         "wait_type":  null,
+                                         "wait_time":  0,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  0
+                                     },
+                                     {
+                                         "session_id":  77,
+                                         "status":  "background",
+                                         "command":  "UCS_TASK_NO_SPEC",
+                                         "wait_type":  "BROKER_TASK_STOP",
+                                         "wait_time":  2689,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  2689
+                                     },
+                                     {
+                                         "session_id":  78,
+                                         "status":  "background",
+                                         "command":  "UCS_TASK_NO_SPEC",
+                                         "wait_type":  "BROKER_TASK_STOP",
+                                         "wait_time":  2692,
+                                         "blocking_session_id":  0,
+                                         "percent_complete":  0,
+                                         "total_elapsed_time":  2692
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "total_physical_memory_kb":  8158984,
+                                         "available_physical_memory_kb":  770176,
+                                         "system_memory_state_desc":  "Physical memory usage is steady"
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "requested_memory_kb":  25496,
+                                         "required_memory_kb":  3072,
+                                         "granted_memory_kb":  null,
+                                         "wait_time_ms":  121766,
+                                         "dop":  1
+                                     }
+                                 ]
+                    },
+                    {
+                        "rows":  [
+                                     {
+                                         "session_id":  51,
+                                         "current_statement":  "SELECT \u0027price_variation\u0027 AS section,COUNT(*) AS sold_products,\n SUM(CASE WHEN price_count\u003e1 THEN 1 ELSE 0 END) AS products_multiple_prices,\n SUM(CASE WHEN cost_count\u003e1 THEN 1 ELSE 0 END) AS products_multiple_implied_costs,\n MIN(price_count) AS min_price_count,MAX(price_count) AS max_price_count\nFROM (SELECT StockItemID,COUNT(DISTINCT UnitPrice) AS price_count,\n COUNT(DISTINCT CAST((ExtendedPrice-TaxAmount-LineProfit)/NULLIF(Quantity,0) AS decimal(18,4))) AS cost_count\n FROM Sales.InvoiceLines GROUP BY StockItemID) q"
+                                     }
+                                 ]
+                    }
+                ],
+    "database":  "master"
+}

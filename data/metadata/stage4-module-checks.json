@@ -1,0 +1,26 @@
+[
+  {
+    "Object": "Kpis",
+    "RawTextEquals": false,
+    "HeaderNormalizedEquals": true,
+    "Passed": true
+  },
+  {
+    "Object": "MonthlyControl",
+    "RawTextEquals": false,
+    "HeaderNormalizedEquals": true,
+    "Passed": true
+  },
+  {
+    "Object": "SafeRatio",
+    "RawTextEquals": false,
+    "HeaderNormalizedEquals": true,
+    "Passed": true
+  },
+  {
+    "Object": "SelectedLines",
+    "RawTextEquals": false,
+    "HeaderNormalizedEquals": true,
+    "Passed": true
+  }
+]

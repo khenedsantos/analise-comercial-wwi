@@ -1,0 +1,43 @@
+{
+  "dataset": "Wide World Importers OLTP Standard",
+  "publisher": "Microsoft",
+  "release": "wide-world-importers-v1.0",
+  "release_url": "https://github.com/microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0",
+  "release_published_at": "2016-06-08T19:25:10Z",
+  "asset_id": 80319902,
+  "asset_created_at": "2022-10-07T22:38:40Z",
+  "asset_updated_at": "2022-10-07T22:42:27Z",
+  "download_url": "https://github.com/microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bak",
+  "filename": "WideWorldImporters-Standard.bak",
+  "format": "SQL Server compressed full database backup (.bak)",
+  "size_bytes": 126951424,
+  "sha256": "066279a8cd28c8d85cbd8215ea71a5d672b420cfbc19756b635c27bd8027dada",
+  "obtained_at_utc": "2026-09-29T11:52:09.375432+00:00",
+  "obtained_at_basis": "Original download last-write timestamp; file unchanged.",
+  "verified_at_utc": "2026-09-29T18:23:48.880340+00:00",
+  "license": "MIT; retain Microsoft copyright and permission notice; review upstream geographic source notices.",
+  "documentation_commit": "beaab06ef72831089ca80e5355d65e661fd19b26",
+  "documentation_note": "Current pinned reference; embedded modules in inventory.json identify logic shipped with the restored artifact.",
+  "sources": [
+    {
+      "file": "data\\metadata\\microsoft-license.txt",
+      "url": "https://raw.githubusercontent.com/microsoft/sql-server-samples/beaab06ef72831089ca80e5355d65e661fd19b26/license.txt",
+      "sha256": "201f3705979e932c92cd3c6ddbddf4dc3c71dcc5a82089a1e4018227cfe1cf09"
+    },
+    {
+      "file": "data\\metadata\\wwi-readme.md",
+      "url": "https://raw.githubusercontent.com/microsoft/sql-server-samples/beaab06ef72831089ca80e5355d65e661fd19b26/samples/databases/wide-world-importers/README.md",
+      "sha256": "9a52a00d92a16941cf864254c2473fcfbd7bcf4175537ec6b7c0a60c8377fc68"
+    },
+    {
+      "file": "data\\metadata\\InvoiceCustomerOrders.official.sql",
+      "url": "https://raw.githubusercontent.com/microsoft/sql-server-samples/beaab06ef72831089ca80e5355d65e661fd19b26/samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/Website/Stored%20Procedures/InvoiceCustomerOrders.sql",
+      "sha256": "09c53c616dd0ee455687ad5d8de049e4b27a6a75f1904f0fbb489bd4dbde6811"
+    },
+    {
+      "file": "data\\metadata\\InvoiceLines.official.sql",
+      "url": "https://raw.githubusercontent.com/microsoft/sql-server-samples/beaab06ef72831089ca80e5355d65e661fd19b26/samples/databases/wide-world-importers/wwi-ssdt/wwi-ssdt/Sales/Tables/InvoiceLines.sql",
+      "sha256": "c73464737bea9f610087c63a37f99b9ba95cde8cdd1b7f24b174bbc9a42dd280"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+﻿{
+    "Mode":  "Build",
+    "Failure":  "Exceção ao chamar \"ExecuteReader\" com \"0\" argumento(s): \"Tempo Limite de Execução Expirado.  O período de tempo limite terminou antes da conclusão da operação ou o servidor não está respondendo.\"",
+    "BackupSHA256":  "066279a8cd28c8d85cbd8215ea71a5d672b420cfbc19756b635c27bd8027dada",
+    "ProtectedFilesUnchanged":  true,
+    "ProtectedFileCount":  46,
+    "ProtectedSHA256":  {
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\backup_inspection.json":  "688ACFF490D3A64F177C4EDF45AE8B73CE89E96427807F88072D07DC8F1D0A57",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\inventory.json":  "C82D111BE94DF0D3947275B3BAD166443EFFD69882C9956E733184B65AF23D44",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\cancel_check.sql":  "0A79E18F4A1B4436E6C8F80DBD3C9F8E6D3547F20AEDBA3BA68EB2DEE8C4127A",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\cancel_waiting_followup.json":  "EBA222F7A68DFC77CE14FE95C0873F2F5ABCEA3C9358D3E89CD59C574D24B516",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\exceptions.json":  "E7620574B49FB052F5F54B3D96EBB27375A12F6306964FE814AD74BE46F34446",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\inventory.sql":  "D7E500C947084B44D5F2E6040AC25D712046C7E537CF27146BC6E9929916AE9D",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\restore.sql":  "B4796AD8AD1AFC8019986045973FF9367B2D2813C35B419A3AC54C60CDCCA802",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\integrity.sql":  "5C64E101DAFC2BC5C8E7378BA2215A9CC42B9917FAC8854142F6A12152564667",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\acquire.py":  "20AB21E301E59467E5AAA1D0652495D437912E198E9F4AB271B338E4E92AB024",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\release.json":  "B1CDFACEEAF2A00081D2115012A62BAC4F1A104006FA7B109B542023BB577DF6",
+                            "C:\\Khened docs\\analise-comercial\\reports\\dicionario_diagnostico.md":  "78AEC185A246F14CEB97DF139EDB509B51B040527866B5AD04F6F2F52F609A90",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\localdb-install.log":  "54001ABF53C7A9B027765C3022B01C3F5C6C608A1F0BE581BA688DB2B7DE8AD1",
+                            "C:\\Khened docs\\analise-comercial\\reports\\diagnostico_etapa2.md":  "DA3346204D94A866089B6CA0C2A49C47B1FFD3A36EEEEA4F14974D4F49EAD8E4",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\query.ps1":  "151175BD09DB7456BA1C5ED3A53532C05283CC7999FC74100A208D8CD6692656",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\report.py":  "D48EAFDDDD2A69F72A36DB0A2C805278B676273A5E7F5FF727A41436907A970B",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\audit.sql":  "E1625C23491B546D64CEFA57B4C3A98ED0C401B898F3F0125BE083296D37D3E8",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\cancel_parallel_check.json":  "B016ADB7D98CB631E77C9D85C69CEB48C3BDED3FA15F63A13AD7C000E5EFF9CA",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\instance_configuration.json":  "1093CA251137E30DD8596FDB8EB70365A8AF35A9E52E280F81657895576AD355",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\runtime_status_elevated.json":  "E413DD36F1938FBAF73C15B3C044643E5994E275D8735AD28481D0FE74F1E27F",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\followup.sql":  "3AF483E933ABD5B0EF8069E3E6380DD39C6671057BED6CA808DCE003D90B6083",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\pricing_semantics.sql":  "95F2B6393C0316F3C62626514EB00338CCCE27BE91DDE5429C95CF7EB0CFCCF1",
+                            "C:\\Khened docs\\analise-comercial\\reports\\perfil_mensal.md":  "70575B36EB585A1594DEF35C320F9C7477C353925ED4DA608F7BFA534E4F4663",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\integrity.json":  "28A1D12E26A85F039BB2856F82BDD77078BE47036C8B3693D4DF28B13113981D",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\report_evidence_hashes.json":  "5CFB4F5285707D1AF514B0743499594971411D86A83214A906146830EDBD2D95",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\configure_instance.sql":  "38E5BC87D40024C1F3D07F6F96F917D098E0B3A43FAACEBE0022ABE1F3DDB295",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\audit.json":  "E712466FD340B6B2CF8B1DB77847DD460237B03B511082D5EC4FA55F718B5E0C",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\localdb-install-elevated.log":  "36FABD713779A520E587257B99A6C17363B295F0B9EF5B801F32E4DB5091ACF7",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\exceptions.sql":  "7F5F076561D5DCBAFBF2191FCBF766702528AA024B922DD1D6519E0802647239",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\restore.ps1":  "3235713181B80476456E108678880595A5582A203E8CA886B2E5E84C0D823A4C",
+                            "C:\\Khened docs\\analise-comercial\\reports\\contrato_analitico_etapa3.md":  "3653CBD5C683A70B40AA83BFD08446C8DF22DC342FAE9F3A9B9809B805F31A30",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\run_audit.ps1":  "1E7C9D5C6619A60C27733B66B4DE2A7E6E1442652515C2274A02DC64B999CA97",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\final_environment.json":  "6AE66D59119BCAA26B25560624534F8C150394642FB96742A88CF504DD5CDBA5",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\backup_inspection.sql":  "C8E2DE76339A622ECACF267F971654081D0CD3DB80C127DA7669259F03F9CADD",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\followup.json":  "197BA646002FD92550D4D66C0B45EF5E9641547786A5F1F43F425D007A08777F",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\cancel_waiting_audit.json":  "305388CF1361DB40665E7B665D5345D450CD068CE2BCAB5E6DE570D716C82490",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\source_commit.json":  "E8A7B8A19B1928C79F8BF63C770824C947418F4D1E44FD508CF3A41F61C400CB",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\environment.sql":  "E43D4875E278C219E790D78236856F9AAB22E03A2A3927E5D88845458C45E9EC",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\InvoiceCustomerOrders.official.sql":  "09C53C616DD0EE455687AD5D8DE049E4B27A6A75F1904F0FBB489BD4DBDE6811",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\restore.json":  "932841D37B3D5BF341E949F6BE01BE3A10E5AC13CF91C6FB0A1E944CE442108A",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\wwi-readme.md":  "9A52A00D92A16941CF864254C2473FCFBD7BCF4175537EC6B7C0A60C8377FC68",
+                            "C:\\Khened docs\\analise-comercial\\scripts\\status.sql":  "22E28A740D69C5E41EA224947DFE0080729F62E44E9B91D3E24C73426FFA1FA2",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\InvoiceLines.official.sql":  "C73464737BEA9F610087C63A37F99B9BA95CDE8CDD1B7F24B174BBC9A42DD280",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\pricing_semantics.json":  "528529F4355FC317D8B35F889AF99A2E1C810CF4608D89449B35426B24563FF0",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\microsoft-license.txt":  "201F3705979E932C92CD3C6DDBDDF4DC3C71DCC5A82089A1E4018227CFE1CF09",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\source_manifest.json":  "0DCB50548FF5CCEC04BFE49FE2E2AFCF60016D973FC62C039F8E1FB7D4FE1F59",
+                            "C:\\Khened docs\\analise-comercial\\data\\metadata\\environment.json":  "E973902486E91BC158D3B9CC81DA3CCD80AA2401E1F786333DF93415F7922B9C"
+                        },
+    "StopExitCode":  0,
+    "InstanceState":  "Nome: \"WWI_Portfolio\"\r\n\r\nVers�o:            17.0.1000.7\r\n\r\nNome compartilhado:        \r\n\r\nPropriet�rio:              KHENED-SANTOS\\khene\r\n\r\nCria��o autom�tica:       N�o\r\n\r\nEstado:              Parado\r\n\r\n�ltima hora de in�cio:    30/09/2026 11:58:46\r\n\r\nNome do pipe da inst�ncia: \r\n\r\n",
+    "Disk":  [
+                 {
+                     "Phase":  "before instance start",
+                     "At":  "2026-09-30T14:58:46.4989410Z",
+                     "FreeBytes":  5368147968
+                 },
+                 {
+                     "Phase":  "environment before",
+                     "At":  "2026-09-30T14:58:48.8901880Z",
+                     "FreeBytes":  5367955456
+                 },
+                 {
+                     "Phase":  "environment before completed",
+                     "At":  "2026-09-30T14:58:48.9617030Z",
+                     "FreeBytes":  5367955456
+                 },
+                 {
+                     "Phase":  "sql\\01_model.sql batch 1",
+                     "At":  "2026-09-30T14:58:48.9877093Z",
+                     "FreeBytes":  5367955456
+                 },
+                 {
+                     "Phase":  "sql\\01_model.sql batch 1 completed",
+                     "At":  "2026-09-30T14:58:55.1092971Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 1",
+                     "At":  "2026-09-30T14:58:55.1113023Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 1 completed",
+                     "At":  "2026-09-30T14:58:55.1113023Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 2",
+                     "At":  "2026-09-30T14:58:55.1123029Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 2 completed",
+                     "At":  "2026-09-30T14:58:55.1152985Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 3",
+                     "At":  "2026-09-30T14:58:55.1152985Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 3 completed",
+                     "At":  "2026-09-30T14:58:55.1203381Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 4",
+                     "At":  "2026-09-30T14:58:55.1203381Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 4 completed",
+                     "At":  "2026-09-30T14:58:55.1303034Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 5",
+                     "At":  "2026-09-30T14:58:55.1303034Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\02_metrics.sql batch 5 completed",
+                     "At":  "2026-09-30T14:58:55.1333025Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\03_validation.sql batch 1",
+                     "At":  "2026-09-30T14:58:55.1478255Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\03_validation.sql batch 1 completed",
+                     "At":  "2026-09-30T14:58:55.1488214Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\03_validation.sql batch 2",
+                     "At":  "2026-09-30T14:58:55.1488214Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\03_validation.sql batch 2 completed",
+                     "At":  "2026-09-30T14:58:55.1498545Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "sql\\03_validation.sql batch 3",
+                     "At":  "2026-09-30T14:58:55.1508594Z",
+                     "FreeBytes":  5344202752
+                 },
+                 {
+                     "Phase":  "after normal stop",
+                     "At":  "2026-09-30T15:01:56.6809506Z",
+                     "FreeBytes":  5330231296
+                 }
+             ],
+    "Results":  [
+                    {
+                        "Batch":  "environment before",
+                        "Rows":  [
+                                     {
+                                         "name":  "WWI_Primary",
+                                         "type_desc":  "ROWS",
+                                         "allocated_mb":  1024.000000,
+                                         "used_mb":  11.500000
+                                     },
+                                     {
+                                         "name":  "WWI_Log",
+                                         "type_desc":  "LOG",
+                                         "allocated_mb":  100.000000,
+                                         "used_mb":  1.546875
+                                     },
+                                     {
+                                         "name":  "WWI_UserData",
+                                         "type_desc":  "ROWS",
+                                         "allocated_mb":  2048.000000,
+                                         "used_mb":  551.812500
+                                     }
+                                 ]
+                    },
+                    {
+                        "Batch":  "environment before",
+                        "Rows":  [
+                                     {
+                                         "name":  "max degree of parallelism",
+                                         "value_in_use":  1
+                                     },
+                                     {
+                                         "name":  "max server memory (MB)",
+                                         "value_in_use":  512
+                                     }
+                                 ]
+                    }
+                ],
+    "Messages":  [
+
+                 ]
+}

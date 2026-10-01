@@ -1,0 +1,92 @@
+{
+  "RecordedAtUTC": "2026-10-01T15:26:16.328299+00:00",
+  "Stage": "4",
+  "Status": "COMPLETE",
+  "TotalChecks": 607,
+  "Passed": 607,
+  "Failed": 0,
+  "SQLChecksReused": 565,
+  "PairsExecutedInPriorEvidence": 45,
+  "PairMismatches": 0,
+  "InitialStage4FreeBytes": 5368147968,
+  "InitialResumptionFreeBytes": 3641413632,
+  "FinalFreeBytes": 3795226624,
+  "Git": {
+    "git status": {
+      "ExitCode": 128,
+      "Message": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    "git diff --stat": {
+      "ExitCode": 129,
+      "Message": "warning: Not a git repository. Use --no-index to compare two paths outside a working tree"
+    },
+    "git diff": {
+      "ExitCode": 129,
+      "Message": "warning: Not a git repository. Use --no-index to compare two paths outside a working tree"
+    }
+  },
+  "EarlierFilesChanged": [],
+  "LocalDB": "Normal stop recorded in stage4-inspect-20261001-122009.json",
+  "Files": {
+    ".gitignore": {
+      "Bytes": 151,
+      "SHA256": "e7e1fa7cdf94a9f861c435afcdc84e11f25447c55e2899c16d06d37cf3ce2617"
+    },
+    "README.md": {
+      "Bytes": 7155,
+      "SHA256": "e9d436eca06c8fa6ca381ee4f771715b94722d12fd22ca525c98d635af990460"
+    },
+    "data/metadata/stage4-20260930-115845.json": {
+      "Bytes": 15095,
+      "SHA256": "faa2d9076584ebef2fcbb2260088c307cc839108cb0131a8daf45ac3aa7fec67"
+    },
+    "data/metadata/stage4-20260930-120408.json": {
+      "Bytes": 509520,
+      "SHA256": "e1cf843752af1a87bbd39376247f67e0b3131a05c91bec0ed78a69caba6d4a96"
+    },
+    "data/metadata/stage4-inspect-20261001-122009.json": {
+      "Bytes": 30949,
+      "SHA256": "c7453a0741148f37ed2b827b14fce93c2b0bc106509128df50d0bc0373df30f0"
+    },
+    "data/metadata/stage4-module-checks.json": {
+      "Bytes": 509,
+      "SHA256": "9554bc3596109a4974cb3a7a8d5869052406c6497fffd54440061eb8e4e3b7d8"
+    },
+    "data/metadata/stage4-runner-tests.json": {
+      "Bytes": 220,
+      "SHA256": "70efeebead66a38811da9860e4fca4e673ee930ff752f519c0a85077e48f7969"
+    },
+    "data/metadata/stage4-runtime.json": {
+      "Bytes": 22316,
+      "SHA256": "5941db20c688390c9b0620da651ee43f376455ca3ca3148f6dda8b595e649ffd"
+    },
+    "reports/modelo_etapa4.md": {
+      "Bytes": 23759,
+      "SHA256": "cfdd991a81123331df41c3e95435d08a89bd4940eba4a2e75b42be24db698eaa"
+    },
+    "reports/validacao_etapa4.md": {
+      "Bytes": 56610,
+      "SHA256": "d49b5a19c55425ae5a81e588fa10da7db918dc21979d8a7d5597ef2b0491f0b8"
+    },
+    "scripts/run_stage4.ps1": {
+      "Bytes": 5799,
+      "SHA256": "4a58564b2dde33c4b975011b8db8349be43af14d529d5ae5b22cca7c649ce840"
+    },
+    "scripts/verify_stage4.py": {
+      "Bytes": 11243,
+      "SHA256": "19445de13734dbeabc2789b7dfb73e729fa7263eaee83af76ffd1c46824b5898"
+    },
+    "sql/01_model.sql": {
+      "Bytes": 7322,
+      "SHA256": "5d13e98e26d4112ea6b8b34c4869f066cd0f3bf21bc8b9973b8884655b23cf60"
+    },
+    "sql/02_metrics.sql": {
+      "Bytes": 10538,
+      "SHA256": "fa1a1647d978a4db9209a8ad170c95d2d353f3ca20233b220b3adcf8207fa706"
+    },
+    "sql/03_validation.sql": {
+      "Bytes": 33328,
+      "SHA256": "add0c2fb91931315900aac7e53fd4d2db36a9838291559d2a8bbfb299454deee"
+    }
+  }
+}
