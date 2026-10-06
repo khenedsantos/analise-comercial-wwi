@@ -10,6 +10,7 @@ __pycache__/
 *.ndf
 *.ldf
 *.pbix
+!/powerbi/analise_comercial_wwi.pbix
 *.tmp
 .env
 .env.*
@@ -44,3 +45,12 @@ Desktop.ini
 data/metadata/source_manifest.local.json
 /consulta.local.sql
 /consulta.local.json
+# Local Power BI caches, recovery files and credentials; textual model stays visible.
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+**/.pbi/unappliedChanges.json
+*.abf
+*.pbit
+powerbi/validation.local.json
+
+/powerbi/screenshots/

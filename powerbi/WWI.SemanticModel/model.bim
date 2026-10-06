@@ -1,0 +1,1558 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"FactInvoiceLine\",\"DimDate\",\"DimBuyer\",\"DimBillingAccount\",\"DimGeography\",\"DimProduct\",\"DimStockGroup\",\"BridgeProductGroup\",\"DimSpecialDeal\",\"_Medidas\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DaxQueryView_Desktop\",\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "discourageImplicitMeasures": true,
+    "relationships": [
+      {
+        "name": "145d17f2-d888-546d-b317-5b8b6e717266",
+        "fromColumn": "DateKey",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "DateKey",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "05e5283d-4a58-541f-b8eb-9e672543f443",
+        "fromColumn": "CustomerID",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "CustomerID",
+        "toTable": "DimBuyer"
+      },
+      {
+        "name": "1032bae1-a904-5c54-a1bc-82c99020c1af",
+        "fromColumn": "BillToCustomerID",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "BillToCustomerID",
+        "toTable": "DimBillingAccount"
+      },
+      {
+        "name": "8915ab67-9f6d-5629-8e80-a763bdc27d81",
+        "fromColumn": "CityID",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "CityID",
+        "toTable": "DimGeography"
+      },
+      {
+        "name": "ce8a4c6b-eae7-52a7-b5ad-1e78d95c92e0",
+        "fromColumn": "StockItemID",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "StockItemID",
+        "toTable": "DimProduct"
+      },
+      {
+        "name": "5732bcdf-9ca8-5491-b775-8ad4b2b332d9",
+        "fromColumn": "SpecialDealID",
+        "fromTable": "FactInvoiceLine",
+        "toColumn": "SpecialDealID",
+        "toTable": "DimSpecialDeal"
+      },
+      {
+        "name": "d07c92d9-eebf-524e-a02b-94cd3dfebdd9",
+        "fromColumn": "StockGroupID",
+        "fromTable": "BridgeProductGroup",
+        "toColumn": "StockGroupID",
+        "toTable": "DimStockGroup"
+      },
+      {
+        "name": "4cfe0034-7fad-5ca6-855a-e6c4a58ede55",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "StockItemID",
+        "fromTable": "BridgeProductGroup",
+        "toColumn": "StockItemID",
+        "toTable": "DimProduct"
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "FactInvoiceLine",
+        "columns": [
+          {
+            "name": "InvoiceLineID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "ed65f381-7250-516a-99bf-2de9c71c7ab6",
+            "sourceColumn": "InvoiceLineID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "InvoiceID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "5953bce2-3f9c-5d27-9e9e-705ba8f609c5",
+            "sourceColumn": "InvoiceID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "70db0e39-1c30-5c8a-9e95-cc3c10dadc70",
+            "sourceColumn": "OrderID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderDate",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "dbcd39da-953e-500b-a87e-b6e4f115912d",
+            "sourceColumn": "OrderDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "148d4661-8068-5c5b-9de4-344593561eae",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "49b1ddf7-0487-58af-962e-bf11289f6a74",
+            "sourceColumn": "CustomerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BillToCustomerID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "bbc59503-0ec1-5812-b955-69485c34eaae",
+            "sourceColumn": "BillToCustomerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StockItemID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "c0524ffe-a22d-5ca1-bb15-19dfd600562d",
+            "sourceColumn": "StockItemID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CityID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "90402eee-fcc6-555f-aac6-679a52d73c48",
+            "sourceColumn": "CityID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PackageTypeID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "14fbcc83-0619-53f3-a60f-dff3a6cacff1",
+            "sourceColumn": "PackageTypeID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quantity",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "48e3b7ad-0624-5d6a-b690-9767395dc49f",
+            "sourceColumn": "Quantity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitPrice",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "43632779-defd-5b5e-89e7-b37bdaf91c23",
+            "sourceColumn": "UnitPrice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TaxRate",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "55faac1d-c972-5e9a-a5e9-c14ff7f01753",
+            "sourceColumn": "TaxRate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TaxAmount",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "22497516-9142-55fd-a885-03e971107fd6",
+            "sourceColumn": "TaxAmount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ExtendedPrice",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "cb78fa21-6e71-5e93-8a0f-b567aeb880d6",
+            "sourceColumn": "ExtendedPrice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LineProfit",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "e0ba97d0-01cd-5566-b29c-8e0ee3b2ce7d",
+            "sourceColumn": "LineProfit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesExTax",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "cd52cd71-63c8-5792-8e65-85c80d184a9c",
+            "sourceColumn": "SalesExTax",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsNegative",
+            "dataType": "boolean",
+            "lineageTag": "2c6aa62a-3d94-56a6-bec6-8b0f36dad894",
+            "sourceColumn": "IsNegative",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsSpecial",
+            "dataType": "boolean",
+            "lineageTag": "112c81e8-b95e-55d0-a6a3-9df1aac31126",
+            "sourceColumn": "IsSpecial",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpecialDealID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "51ad48b1-8aca-58c8-b9a7-2353c5a8d182",
+            "sourceColumn": "SpecialDealID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "37d48c18-46ba-51be-b924-3b9432159b56",
+        "partitions": [
+          {
+            "name": "FactInvoiceLine",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"FactInvoiceLine\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"InvoiceLineID\", Int64.Type}, {\"InvoiceID\", Int64.Type}, {\"OrderID\", Int64.Type}, {\"OrderDate\", type date}, {\"DateKey\", Int64.Type}, {\"CustomerID\", Int64.Type}, {\"BillToCustomerID\", Int64.Type}, {\"StockItemID\", Int64.Type}, {\"CityID\", Int64.Type}, {\"PackageTypeID\", Int64.Type}, {\"Quantity\", Int64.Type}, {\"UnitPrice\", Currency.Type}, {\"TaxRate\", Currency.Type}, {\"TaxAmount\", Currency.Type}, {\"ExtendedPrice\", Currency.Type}, {\"LineProfit\", Currency.Type}, {\"SalesExTax\", Currency.Type}, {\"IsNegative\", type logical}, {\"IsSpecial\", type logical}, {\"SpecialDealID\", Int64.Type}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "4293b8fe-0b0c-517f-9b8a-79306bd4e588",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CalendarDate",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "isKey": true,
+            "lineageTag": "dffe75df-e6c0-5546-bf79-c377912078f8",
+            "sourceColumn": "CalendarDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CalendarYear",
+            "dataType": "int64",
+            "lineageTag": "5864daa2-b3ef-50d0-85b8-60ac0cd122ef",
+            "sourceColumn": "CalendarYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthNumber",
+            "dataType": "int64",
+            "lineageTag": "80bd723b-7994-5ed2-b0a8-96c84eb3afab",
+            "sourceColumn": "MonthNumber",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "YearMonth",
+            "dataType": "int64",
+            "lineageTag": "81d8a482-daa5-58a1-9718-992f1ede836a",
+            "sourceColumn": "YearMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthStart",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "lineageTag": "fd7b3dfc-ac2c-5fd2-bfd7-af8c1c380a70",
+            "sourceColumn": "MonthStart",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthEnd",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "lineageTag": "9ff82e2f-416a-5a19-9230-5a6b9f53283c",
+            "sourceColumn": "MonthEnd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayOfMonth",
+            "dataType": "int64",
+            "lineageTag": "ae1c11e6-026e-53d8-9f41-c9dd112e43fe",
+            "sourceColumn": "DayOfMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsoDayOfWeek",
+            "dataType": "int64",
+            "lineageTag": "1665d753-9d8e-5e39-984c-e94e26027b1e",
+            "sourceColumn": "IsoDayOfWeek",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsCompleteYear",
+            "dataType": "boolean",
+            "lineageTag": "35607c71-5fc9-54a6-99f8-a4c520d94fd5",
+            "sourceColumn": "IsCompleteYear",
+            "summarizeBy": "none"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "8079a15a-52c7-57ba-b236-d56c1a783d9c",
+        "partitions": [
+          {
+            "name": "DimDate",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimDate\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"DateKey\", Int64.Type}, {\"CalendarDate\", type date}, {\"CalendarYear\", Int64.Type}, {\"MonthNumber\", Int64.Type}, {\"YearMonth\", Int64.Type}, {\"MonthStart\", type date}, {\"MonthEnd\", type date}, {\"DayOfMonth\", Int64.Type}, {\"IsoDayOfWeek\", Int64.Type}, {\"IsCompleteYear\", type logical}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimBuyer",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "583cf03f-bee2-5880-917c-1f63b4379dbf",
+            "sourceColumn": "CustomerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerName",
+            "dataType": "string",
+            "lineageTag": "ddb6d5c0-f91f-5f55-ae1b-a4a98c18c238",
+            "sourceColumn": "CustomerName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerCategoryID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "758098a9-b17c-5dce-85e7-31c770a04828",
+            "sourceColumn": "CustomerCategoryID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerCategoryName",
+            "dataType": "string",
+            "lineageTag": "9a12a5d8-e408-5b21-9b08-075f15eb1427",
+            "sourceColumn": "CustomerCategoryName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BuyingGroupID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "3033978b-2d78-5e4f-bae9-722cc5007680",
+            "sourceColumn": "BuyingGroupID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BuyingGroupName",
+            "dataType": "string",
+            "lineageTag": "3f26c5c0-b011-5262-8634-7700ec75ccd5",
+            "sourceColumn": "BuyingGroupName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DeliveryCityID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "7d444715-4deb-5b89-bd67-2f5b8a2581a7",
+            "sourceColumn": "DeliveryCityID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "31a6db9c-f9e4-55b6-b177-54177aebeb14",
+        "partitions": [
+          {
+            "name": "DimBuyer",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimBuyer\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"CustomerID\", Int64.Type}, {\"CustomerName\", type text}, {\"CustomerCategoryID\", Int64.Type}, {\"CustomerCategoryName\", type text}, {\"BuyingGroupID\", Int64.Type}, {\"BuyingGroupName\", type text}, {\"DeliveryCityID\", Int64.Type}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimBillingAccount",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "BillToCustomerID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "e3d80507-7c21-5764-a768-43b2b374c66c",
+            "sourceColumn": "BillToCustomerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BillingAccountName",
+            "dataType": "string",
+            "lineageTag": "a8d42d90-80fa-50fc-ac9f-216d943e8a92",
+            "sourceColumn": "BillingAccountName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "850f558a-d0fc-5201-a264-102b8910d631",
+        "partitions": [
+          {
+            "name": "DimBillingAccount",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimBillingAccount\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"BillToCustomerID\", Int64.Type}, {\"BillingAccountName\", type text}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimGeography",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "CityID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "d55b22fe-c23f-53b1-ba79-8106508714fd",
+            "sourceColumn": "CityID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CityName",
+            "dataType": "string",
+            "lineageTag": "64565387-a827-5a74-a6d5-ac328eddca24",
+            "sourceColumn": "CityName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StateProvinceID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "fcb527ac-2397-59b4-8376-bc7ba857dcbb",
+            "sourceColumn": "StateProvinceID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StateProvinceCode",
+            "dataType": "string",
+            "lineageTag": "02c656ac-44f1-5485-ae7a-6dcecc106fee",
+            "sourceColumn": "StateProvinceCode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StateProvinceName",
+            "dataType": "string",
+            "lineageTag": "24aee072-29b4-50d2-8a75-041d3f7fedba",
+            "sourceColumn": "StateProvinceName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CountryID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "d87e29c9-c8a0-5868-ab19-87321372d0e3",
+            "sourceColumn": "CountryID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CountryName",
+            "dataType": "string",
+            "lineageTag": "14560249-3f5e-5ad3-9a2b-f5ef5e6eb6e0",
+            "sourceColumn": "CountryName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fae4759f-87cd-54a7-ae29-cb28da8063e0",
+        "partitions": [
+          {
+            "name": "DimGeography",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimGeography\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"CityID\", Int64.Type}, {\"CityName\", type text}, {\"StateProvinceID\", Int64.Type}, {\"StateProvinceCode\", type text}, {\"StateProvinceName\", type text}, {\"CountryID\", Int64.Type}, {\"CountryName\", type text}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProduct",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "StockItemID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "a15d75a3-30e1-5b40-b273-b6a0e66113f1",
+            "sourceColumn": "StockItemID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StockItemName",
+            "dataType": "string",
+            "lineageTag": "4ec6465b-f9de-5a21-a2f0-2458c736ce01",
+            "sourceColumn": "StockItemName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Brand",
+            "dataType": "string",
+            "lineageTag": "1b2f8926-144e-5e32-9e98-60d18c5cb759",
+            "sourceColumn": "Brand",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Size",
+            "dataType": "string",
+            "lineageTag": "e068642d-5334-5ed2-924c-a6861b304959",
+            "sourceColumn": "Size",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ColorID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "3118658f-f341-5c04-a3f4-b571ea4d38da",
+            "sourceColumn": "ColorID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ColorName",
+            "dataType": "string",
+            "lineageTag": "7603d4df-aba8-50df-a518-99aad503a2ad",
+            "sourceColumn": "ColorName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitPackageID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "f7f5faaf-a7a7-54cf-9243-0fc6f321ff1a",
+            "sourceColumn": "UnitPackageID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitPackageName",
+            "dataType": "string",
+            "lineageTag": "9c587f78-77f0-5e4a-826b-a0a3274ade85",
+            "sourceColumn": "UnitPackageName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8cc49af9-4398-5a33-b0d6-7e6669a47d5b",
+        "partitions": [
+          {
+            "name": "DimProduct",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimProduct\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"StockItemID\", Int64.Type}, {\"StockItemName\", type text}, {\"Brand\", type text}, {\"Size\", type text}, {\"ColorID\", Int64.Type}, {\"ColorName\", type text}, {\"UnitPackageID\", Int64.Type}, {\"UnitPackageName\", type text}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimStockGroup",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "StockGroupID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "4b1532f8-f4a2-5ad9-9a57-9c11dabc6a61",
+            "sourceColumn": "StockGroupID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StockGroupName",
+            "dataType": "string",
+            "lineageTag": "cee54139-fcdd-5401-8ff3-9bb189724962",
+            "sourceColumn": "StockGroupName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a8ab7d32-219e-57e8-b0e9-36e73ecc779b",
+        "partitions": [
+          {
+            "name": "DimStockGroup",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimStockGroup\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"StockGroupID\", Int64.Type}, {\"StockGroupName\", type text}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "BridgeProductGroup",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "StockItemID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "a41b49cd-ba32-537d-9c9e-e1e98f36627e",
+            "sourceColumn": "StockItemID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StockGroupID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "b82481a2-2ade-50ec-9339-f03f562b8a76",
+            "sourceColumn": "StockGroupID",
+            "summarizeBy": "none"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "00fbd9d2-1795-5558-a764-f1ebba409995",
+        "partitions": [
+          {
+            "name": "BridgeProductGroup",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"BridgeProductGroup\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"StockItemID\", Int64.Type}, {\"StockGroupID\", Int64.Type}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimSpecialDeal",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SpecialDealID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8a336720-7604-5b71-b7a5-4c15ab83d8ba",
+            "sourceColumn": "SpecialDealID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DealDescription",
+            "dataType": "string",
+            "lineageTag": "14babd17-dc91-59f6-9730-5c8af7b2aa38",
+            "sourceColumn": "DealDescription",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BuyingGroupID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "781bba70-1617-546c-a37a-b60fd9e29405",
+            "sourceColumn": "BuyingGroupID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StockGroupID",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "b23372d4-5e2e-5793-ac4e-fef80312812b",
+            "sourceColumn": "StockGroupID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StartDate",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "lineageTag": "fd1ff77c-7e59-512c-b951-fa87a40a6596",
+            "sourceColumn": "StartDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EndDate",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd/MM/yyyy",
+            "lineageTag": "133c2ce1-1456-582f-b330-42e58192e3e5",
+            "sourceColumn": "EndDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DiscountPercentage",
+            "dataType": "decimal",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "246b91d1-2df7-561c-9ed1-98d30c568123",
+            "sourceColumn": "DiscountPercentage",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c0d24f45-f1ff-5230-82be-6e7f4e4fb531",
+        "partitions": [
+          {
+            "name": "DimSpecialDeal",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"(localdb)\\WWI_Portfolio\", \"WWI_Portfolio_Diagnostic\", [CreateNavigationProperties=false]),",
+                "    Data = Source{[Schema=\"analytics\",Item=\"DimSpecialDeal\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Data, {{\"SpecialDealID\", Int64.Type}, {\"DealDescription\", type text}, {\"BuyingGroupID\", Int64.Type}, {\"StockGroupID\", Int64.Type}, {\"StartDate\", type date}, {\"EndDate\", type date}, {\"DiscountPercentage\", Currency.Type}})",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "_Placeholder",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "ac24727c-52f4-46ea-a21b-87eb02d479a1",
+            "sourceColumn": "_Placeholder",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "af0dec15-8b67-5cd4-a265-9f8fcdafdeb6",
+        "measures": [
+          {
+            "name": "_Cobertura",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": [
+              "VAR n = COUNTROWS(VALUES(DimDate[CalendarDate]))",
+              "RETURN n > 0 && MIN(DimDate[CalendarDate]) >= DATE(2013,1,1) && MAX(DimDate[CalendarDate]) <= DATE(2016,5,31)"
+            ],
+            "formatString": "TRUE;TRUE;FALSE",
+            "isHidden": true,
+            "lineageTag": "0ffe3de8-21e4-5951-a6ce-9907a41f949a"
+          },
+          {
+            "name": "Vendas sem impostos",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([_Cobertura], COALESCE(SUM(FactInvoiceLine[SalesExTax]),0))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "bedcb24d-fde3-53a1-9d32-1000fb53003e"
+          },
+          {
+            "name": "Impostos",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([_Cobertura], COALESCE(SUM(FactInvoiceLine[TaxAmount]),0))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "10af9627-f005-567a-b4c2-5f2b6fbead5b"
+          },
+          {
+            "name": "Faturamento com impostos",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([_Cobertura], COALESCE(SUM(FactInvoiceLine[ExtendedPrice]),0))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "2f8ca91f-d081-57b8-a10d-cb004a213894"
+          },
+          {
+            "name": "Lucro comercial registrado",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([_Cobertura], COALESCE(SUM(FactInvoiceLine[LineProfit]),0))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "63701ef6-96e1-59dd-82b0-6ed58854adcc"
+          },
+          {
+            "name": "Margem comercial registrada",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([Vendas sem impostos] > 0, DIVIDE([Lucro comercial registrado],[Vendas sem impostos]))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "529a5e60-3524-521a-b093-faac4c332d06"
+          },
+          {
+            "name": "Linhas faturadas",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "02 — Volume",
+            "expression": "IF([_Cobertura], COALESCE(COUNTROWS(FactInvoiceLine),0))",
+            "formatString": "#,0",
+            "lineageTag": "cf769e5c-ba52-596e-b040-008f90b8356a"
+          },
+          {
+            "name": "Faturas",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "02 — Volume",
+            "expression": "IF([_Cobertura], COALESCE(DISTINCTCOUNT(FactInvoiceLine[InvoiceID]),0))",
+            "formatString": "#,0",
+            "lineageTag": "dbd0f79d-f182-5e30-b335-191f0753d732"
+          },
+          {
+            "name": "Clientes compradores",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "02 — Volume",
+            "expression": "IF([_Cobertura], COALESCE(DISTINCTCOUNT(FactInvoiceLine[CustomerID]),0))",
+            "formatString": "#,0",
+            "lineageTag": "7ef1695c-a183-5124-be8c-eab2bc65c271"
+          },
+          {
+            "name": "Contas de cobrança",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "02 — Volume",
+            "expression": "IF([_Cobertura], COALESCE(DISTINCTCOUNT(FactInvoiceLine[BillToCustomerID]),0))",
+            "formatString": "#,0",
+            "lineageTag": "fd14015c-90dd-5f00-9972-6b7ba988cc2d"
+          },
+          {
+            "name": "Produtos faturados",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "02 — Volume",
+            "expression": "IF([_Cobertura], COALESCE(DISTINCTCOUNT(FactInvoiceLine[StockItemID]),0))",
+            "formatString": "#,0",
+            "lineageTag": "ae6c1231-fe98-555c-a0b2-64cb65591b32"
+          },
+          {
+            "name": "Valor médio do recorte por fatura",
+            "description": "K10. Sob produto/grupo, valor das linhas selecionadas por fatura, não da cesta inteira.",
+            "displayFolder": "01 — Financeiro",
+            "expression": "IF([Faturas] > 0, DIVIDE(CONVERT([Vendas sem impostos], DOUBLE),[Faturas]))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "b330d88c-103b-5191-87b4-63bff719a9ac"
+          },
+          {
+            "name": "Linhas de lucro negativo",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "CALCULATE([Linhas faturadas], KEEPFILTERS(FactInvoiceLine[IsNegative] = TRUE()))",
+            "formatString": "#,0",
+            "lineageTag": "ccc52c29-865e-57b5-99f4-d34a5229e0ea"
+          },
+          {
+            "name": "Resultado registrado das linhas negativas",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "CALCULATE([Lucro comercial registrado], KEEPFILTERS(FactInvoiceLine[IsNegative] = TRUE()))",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "23611f12-c0d8-5aa7-867c-2427048aa90f"
+          },
+          {
+            "name": "Linhas em condições especiais",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "CALCULATE([Linhas faturadas], KEEPFILTERS(FactInvoiceLine[IsSpecial] = TRUE()))",
+            "formatString": "#,0",
+            "lineageTag": "9425e345-814c-5042-9d48-a33a8f9e19ef"
+          },
+          {
+            "name": "Negativas não especiais",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "CALCULATE([Linhas de lucro negativo], KEEPFILTERS(FactInvoiceLine[IsSpecial] = FALSE()))",
+            "formatString": "#,0",
+            "lineageTag": "4b9a2b59-0865-58aa-a578-5c4be2697131"
+          },
+          {
+            "name": "Percentual de linhas negativas",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "IF([Linhas faturadas] > 0, DIVIDE([Linhas de lucro negativo],[Linhas faturadas]))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "dc526a4e-4158-5f9d-b11b-2e644d5c71bd"
+          },
+          {
+            "name": "Participação das condições especiais",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "05 — Diagnósticos",
+            "expression": "IF([Vendas sem impostos] > 0, DIVIDE(CALCULATE([Vendas sem impostos], KEEPFILTERS(FactInvoiceLine[IsSpecial] = TRUE())),[Vendas sem impostos]))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "08a1b554-be31-5cd1-b447-8fdc4c7ce603"
+          },
+          {
+            "name": "K11 Participação — comprador",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBuyer[CustomerID], DimBuyer[CustomerName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "c3870ade-b068-536b-bab1-36177fe836c2"
+          },
+          {
+            "name": "K12 CR5 — comprador",
+            "description": "K12. Exatamente cinco IDs (ou menos se seleção menor), desempate ID crescente. Não usar para Stock Groups.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR selectedRevenue = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBuyer[CustomerID], DimBuyer[CustomerName]))",
+              "VAR entities = CALCULATETABLE(",
+              "    ADDCOLUMNS(VALUES(DimBuyer[CustomerID]), \"__Revenue\", [Vendas sem impostos]),",
+              "    ALLSELECTED(DimBuyer[CustomerID], DimBuyer[CustomerName]))",
+              "VAR topFive = TOPN(5, entities, [__Revenue], DESC, DimBuyer[CustomerID], ASC)",
+              "RETURN IF([_Cobertura] && selectedRevenue > 0, DIVIDE(SUMX(topFive,[__Revenue]),selectedRevenue))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "8fdd9e0e-2bdb-5558-a35e-45f3e23f845e"
+          },
+          {
+            "name": "K11 Participação — conta",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBillingAccount[BillToCustomerID], DimBillingAccount[BillingAccountName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "dd3c2974-fa09-59ad-b663-3dd313ef771d"
+          },
+          {
+            "name": "K12 CR5 — conta",
+            "description": "K12. Exatamente cinco IDs (ou menos se seleção menor), desempate ID crescente. Não usar para Stock Groups.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR selectedRevenue = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBillingAccount[BillToCustomerID], DimBillingAccount[BillingAccountName]))",
+              "VAR entities = CALCULATETABLE(",
+              "    ADDCOLUMNS(VALUES(DimBillingAccount[BillToCustomerID]), \"__Revenue\", [Vendas sem impostos]),",
+              "    ALLSELECTED(DimBillingAccount[BillToCustomerID], DimBillingAccount[BillingAccountName]))",
+              "VAR topFive = TOPN(5, entities, [__Revenue], DESC, DimBillingAccount[BillToCustomerID], ASC)",
+              "RETURN IF([_Cobertura] && selectedRevenue > 0, DIVIDE(SUMX(topFive,[__Revenue]),selectedRevenue))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "f2acfab0-493b-5e40-b92e-d25cdd96055e"
+          },
+          {
+            "name": "K11 Participação — produto",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimProduct[StockItemID], DimProduct[StockItemName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "e4eb7fc2-2007-5cce-b325-30476b72dfe3"
+          },
+          {
+            "name": "K12 CR5 — produto",
+            "description": "K12. Exatamente cinco IDs (ou menos se seleção menor), desempate ID crescente. Não usar para Stock Groups.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR selectedRevenue = CALCULATE([Vendas sem impostos], ALLSELECTED(DimProduct[StockItemID], DimProduct[StockItemName]))",
+              "VAR entities = CALCULATETABLE(",
+              "    ADDCOLUMNS(VALUES(DimProduct[StockItemID]), \"__Revenue\", [Vendas sem impostos]),",
+              "    ALLSELECTED(DimProduct[StockItemID], DimProduct[StockItemName]))",
+              "VAR topFive = TOPN(5, entities, [__Revenue], DESC, DimProduct[StockItemID], ASC)",
+              "RETURN IF([_Cobertura] && selectedRevenue > 0, DIVIDE(SUMX(topFive,[__Revenue]),selectedRevenue))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "b78b5d03-9168-51aa-9b27-8eeefa43e649"
+          },
+          {
+            "name": "K11 Participação — grupo",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimStockGroup[StockGroupID], DimStockGroup[StockGroupName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "cd36bfa7-9551-5d2f-baea-f3f48668f128"
+          },
+          {
+            "name": "K11 Participação — cidade",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimGeography[CityID], DimGeography[CityName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "28fd61de-8832-53c4-8e19-bbe70f5f51c5"
+          },
+          {
+            "name": "K11 Participação — categoria",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBuyer[CustomerCategoryID], DimBuyer[CustomerCategoryName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "661ae21f-a037-5d77-87d1-83267707cf51"
+          },
+          {
+            "name": "K11 Participação — grupo comprador",
+            "description": "K11. Um eixo de IDs/nomes indicado; filtros externos preservados. Não usar Top N nativo. Grupos sobrepostos não são aditivos.",
+            "displayFolder": "03 — Participação e concentração",
+            "expression": [
+              "VAR denominator = CALCULATE([Vendas sem impostos], ALLSELECTED(DimBuyer[BuyingGroupID], DimBuyer[BuyingGroupName]))",
+              "RETURN IF(denominator > 0, DIVIDE([Vendas sem impostos],denominator))"
+            ],
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "fa69034c-bfc0-5258-b4dd-bddd1d2cf7cf"
+          },
+          {
+            "name": "_Anterior início AUTO",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = MIN(DimDate[CalendarDate])",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "VAR contiguous = COUNTROWS(VALUES(DimDate[CalendarDate])) = DATEDIFF(firstDay,lastDay,DAY) + 1",
+              "VAR whole = [_Cobertura] && contiguous && DAY(firstDay)=1 && lastDay=EOMONTH(lastDay,0)",
+              "VAR singleMonth = EOMONTH(firstDay,0)=lastDay",
+              "VAR accumulated = MONTH(firstDay)=1 && YEAR(firstDay)=YEAR(lastDay)",
+              "VAR fullYear = accumulated && MONTH(lastDay)=12",
+              "VAR mode = IF(\"AUTO\"=\"AUTO\", IF(singleMonth,\"YOY\",IF(accumulated,\"YTD\",\"NONE\")),\"AUTO\")",
+              "VAR eligible = whole && SWITCH(mode,\"MOM\",singleMonth,\"YOY\",singleMonth || fullYear,\"YTD\",accumulated,FALSE())",
+              "VAR previous = EDATE(firstDay,IF(mode=\"MOM\",-1,-12))",
+              "RETURN IF(eligible && previous >= DATE(2013,1,1),previous)"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "2d5bf2b6-ad62-5f2a-a490-2aacd4ae8bd5"
+          },
+          {
+            "name": "_Anterior fim AUTO",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início AUTO]",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "RETURN IF(NOT ISBLANK(firstDay), EOMONTH(lastDay,IF(\"AUTO\"=\"MOM\",-1,-12)))"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "889cedc0-c3ae-56df-a116-58b17ebf8eab"
+          },
+          {
+            "name": "_Vendas anterior AUTO",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início AUTO]",
+              "VAR lastDay = [_Anterior fim AUTO]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Vendas sem impostos], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "3dcc1e34-c1a0-53ed-bc49-3b50167758ac"
+          },
+          {
+            "name": "_Lucro anterior AUTO",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início AUTO]",
+              "VAR lastDay = [_Anterior fim AUTO]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Lucro comercial registrado], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "7cd313bb-c00a-5a1a-8ffc-2fbaae06cf43"
+          },
+          {
+            "name": "K13 Variação de vendas — AUTO",
+            "description": "K13; AUTO. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início AUTO]),[Vendas sem impostos]-[_Vendas anterior AUTO])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "79a8f476-9bfd-5404-8c07-15baf540db40"
+          },
+          {
+            "name": "K14 Crescimento de vendas — AUTO",
+            "description": "K14; AUTO. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início AUTO]),IF([_Vendas anterior AUTO]>0,DIVIDE([Vendas sem impostos]-[_Vendas anterior AUTO],[_Vendas anterior AUTO])))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "2939525f-017b-5fb8-92ba-74a016d54950"
+          },
+          {
+            "name": "K15 Variação de lucro — AUTO",
+            "description": "K15; AUTO. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início AUTO]),[Lucro comercial registrado]-[_Lucro anterior AUTO])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "0c1650f0-03fd-5246-9ea9-4daa812eeaa2"
+          },
+          {
+            "name": "K16 Variação de margem — AUTO",
+            "description": "K16; AUTO. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início AUTO]),IF([Vendas sem impostos]>0 && [_Vendas anterior AUTO]>0,100*([Margem comercial registrada]-DIVIDE([_Lucro anterior AUTO],[_Vendas anterior AUTO]))))",
+            "formatString": "0.0000 \"p.p.\";-0.0000 \"p.p.\";0.0000 \"p.p.\"",
+            "lineageTag": "d8f4d2d2-7b7c-5316-95cd-c703cd707877"
+          },
+          {
+            "name": "_Anterior início YOY",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = MIN(DimDate[CalendarDate])",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "VAR contiguous = COUNTROWS(VALUES(DimDate[CalendarDate])) = DATEDIFF(firstDay,lastDay,DAY) + 1",
+              "VAR whole = [_Cobertura] && contiguous && DAY(firstDay)=1 && lastDay=EOMONTH(lastDay,0)",
+              "VAR singleMonth = EOMONTH(firstDay,0)=lastDay",
+              "VAR accumulated = MONTH(firstDay)=1 && YEAR(firstDay)=YEAR(lastDay)",
+              "VAR fullYear = accumulated && MONTH(lastDay)=12",
+              "VAR mode = IF(\"YOY\"=\"AUTO\", IF(singleMonth,\"YOY\",IF(accumulated,\"YTD\",\"NONE\")),\"YOY\")",
+              "VAR eligible = whole && SWITCH(mode,\"MOM\",singleMonth,\"YOY\",singleMonth || fullYear,\"YTD\",accumulated,FALSE())",
+              "VAR previous = EDATE(firstDay,IF(mode=\"MOM\",-1,-12))",
+              "RETURN IF(eligible && previous >= DATE(2013,1,1),previous)"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "bc2dd74e-4f87-569f-b5e0-e2b0e36c087a"
+          },
+          {
+            "name": "_Anterior fim YOY",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YOY]",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "RETURN IF(NOT ISBLANK(firstDay), EOMONTH(lastDay,IF(\"YOY\"=\"MOM\",-1,-12)))"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "11dab50c-c1eb-5836-b32e-c553b3e40cc0"
+          },
+          {
+            "name": "_Vendas anterior YOY",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YOY]",
+              "VAR lastDay = [_Anterior fim YOY]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Vendas sem impostos], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "1c1385f4-a93a-5ce9-b9a1-b8c775ab774e"
+          },
+          {
+            "name": "_Lucro anterior YOY",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YOY]",
+              "VAR lastDay = [_Anterior fim YOY]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Lucro comercial registrado], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "92bee082-e643-575b-8546-1b17cbcba8e4"
+          },
+          {
+            "name": "K13 Variação de vendas — YOY",
+            "description": "K13; YOY. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YOY]),[Vendas sem impostos]-[_Vendas anterior YOY])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "8950b1f8-ebc5-54fb-8719-58490a21421b"
+          },
+          {
+            "name": "K14 Crescimento de vendas — YOY",
+            "description": "K14; YOY. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YOY]),IF([_Vendas anterior YOY]>0,DIVIDE([Vendas sem impostos]-[_Vendas anterior YOY],[_Vendas anterior YOY])))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "b3be8ffc-1fdc-53a2-8f89-ce2bc3c6c582"
+          },
+          {
+            "name": "K15 Variação de lucro — YOY",
+            "description": "K15; YOY. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YOY]),[Lucro comercial registrado]-[_Lucro anterior YOY])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "ddfaf797-35f2-5162-90d9-e8bf2048cd15"
+          },
+          {
+            "name": "K16 Variação de margem — YOY",
+            "description": "K16; YOY. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YOY]),IF([Vendas sem impostos]>0 && [_Vendas anterior YOY]>0,100*([Margem comercial registrada]-DIVIDE([_Lucro anterior YOY],[_Vendas anterior YOY]))))",
+            "formatString": "0.0000 \"p.p.\";-0.0000 \"p.p.\";0.0000 \"p.p.\"",
+            "lineageTag": "53aed41b-eeb7-5a46-9f06-0e876022434d"
+          },
+          {
+            "name": "_Anterior início MOM",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = MIN(DimDate[CalendarDate])",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "VAR contiguous = COUNTROWS(VALUES(DimDate[CalendarDate])) = DATEDIFF(firstDay,lastDay,DAY) + 1",
+              "VAR whole = [_Cobertura] && contiguous && DAY(firstDay)=1 && lastDay=EOMONTH(lastDay,0)",
+              "VAR singleMonth = EOMONTH(firstDay,0)=lastDay",
+              "VAR accumulated = MONTH(firstDay)=1 && YEAR(firstDay)=YEAR(lastDay)",
+              "VAR fullYear = accumulated && MONTH(lastDay)=12",
+              "VAR mode = IF(\"MOM\"=\"AUTO\", IF(singleMonth,\"YOY\",IF(accumulated,\"YTD\",\"NONE\")),\"MOM\")",
+              "VAR eligible = whole && SWITCH(mode,\"MOM\",singleMonth,\"YOY\",singleMonth || fullYear,\"YTD\",accumulated,FALSE())",
+              "VAR previous = EDATE(firstDay,IF(mode=\"MOM\",-1,-12))",
+              "RETURN IF(eligible && previous >= DATE(2013,1,1),previous)"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "1f666add-291c-5ecd-996c-f66fdab235b3"
+          },
+          {
+            "name": "_Anterior fim MOM",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início MOM]",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "RETURN IF(NOT ISBLANK(firstDay), EOMONTH(lastDay,IF(\"MOM\"=\"MOM\",-1,-12)))"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "767ece38-6f88-5d3c-9347-b244705e4dbb"
+          },
+          {
+            "name": "_Vendas anterior MOM",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início MOM]",
+              "VAR lastDay = [_Anterior fim MOM]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Vendas sem impostos], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "032ab421-1212-5919-97db-b187b253d967"
+          },
+          {
+            "name": "_Lucro anterior MOM",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início MOM]",
+              "VAR lastDay = [_Anterior fim MOM]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Lucro comercial registrado], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "a0f7d0c8-a36b-5a30-8e82-03fe8cccd1d4"
+          },
+          {
+            "name": "K13 Variação de vendas — MOM",
+            "description": "K13; MOM. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início MOM]),[Vendas sem impostos]-[_Vendas anterior MOM])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "ce525826-8c71-501d-8057-7eb0c2f1b6a3"
+          },
+          {
+            "name": "K14 Crescimento de vendas — MOM",
+            "description": "K14; MOM. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início MOM]),IF([_Vendas anterior MOM]>0,DIVIDE([Vendas sem impostos]-[_Vendas anterior MOM],[_Vendas anterior MOM])))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "5cb4e363-ae0d-58b5-adbc-7d8eef7ef807"
+          },
+          {
+            "name": "K15 Variação de lucro — MOM",
+            "description": "K15; MOM. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início MOM]),[Lucro comercial registrado]-[_Lucro anterior MOM])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "6438ec2d-9f45-500b-bb4d-9eb89614d425"
+          },
+          {
+            "name": "K16 Variação de margem — MOM",
+            "description": "K16; MOM. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início MOM]),IF([Vendas sem impostos]>0 && [_Vendas anterior MOM]>0,100*([Margem comercial registrada]-DIVIDE([_Lucro anterior MOM],[_Vendas anterior MOM]))))",
+            "formatString": "0.0000 \"p.p.\";-0.0000 \"p.p.\";0.0000 \"p.p.\"",
+            "lineageTag": "470caad9-710d-55d8-997b-bf647bf8fc15"
+          },
+          {
+            "name": "_Anterior início YTD",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = MIN(DimDate[CalendarDate])",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "VAR contiguous = COUNTROWS(VALUES(DimDate[CalendarDate])) = DATEDIFF(firstDay,lastDay,DAY) + 1",
+              "VAR whole = [_Cobertura] && contiguous && DAY(firstDay)=1 && lastDay=EOMONTH(lastDay,0)",
+              "VAR singleMonth = EOMONTH(firstDay,0)=lastDay",
+              "VAR accumulated = MONTH(firstDay)=1 && YEAR(firstDay)=YEAR(lastDay)",
+              "VAR fullYear = accumulated && MONTH(lastDay)=12",
+              "VAR mode = IF(\"YTD\"=\"AUTO\", IF(singleMonth,\"YOY\",IF(accumulated,\"YTD\",\"NONE\")),\"YTD\")",
+              "VAR eligible = whole && SWITCH(mode,\"MOM\",singleMonth,\"YOY\",singleMonth || fullYear,\"YTD\",accumulated,FALSE())",
+              "VAR previous = EDATE(firstDay,IF(mode=\"MOM\",-1,-12))",
+              "RETURN IF(eligible && previous >= DATE(2013,1,1),previous)"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "985b7a19-0ad0-540a-9edf-26eee839dcc8"
+          },
+          {
+            "name": "_Anterior fim YTD",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YTD]",
+              "VAR lastDay = MAX(DimDate[CalendarDate])",
+              "RETURN IF(NOT ISBLANK(firstDay), EOMONTH(lastDay,IF(\"YTD\"=\"MOM\",-1,-12)))"
+            ],
+            "formatString": "dd/MM/yyyy",
+            "isHidden": true,
+            "lineageTag": "814645cf-70de-5ee2-81b0-a10a39ec99c5"
+          },
+          {
+            "name": "_Vendas anterior YTD",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YTD]",
+              "VAR lastDay = [_Anterior fim YTD]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Vendas sem impostos], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "571fa6d6-3cdc-52fa-b773-3a8601581bc5"
+          },
+          {
+            "name": "_Lucro anterior YTD",
+            "description": "WWI sintética. Contrato Etapa 3; respeita os filtros do recorte.",
+            "displayFolder": "04 — Comparações",
+            "expression": [
+              "VAR firstDay = [_Anterior início YTD]",
+              "VAR lastDay = [_Anterior fim YTD]",
+              "RETURN IF(NOT ISBLANK(firstDay), CALCULATE([Lucro comercial registrado], REMOVEFILTERS(DimDate),",
+              "    DATESBETWEEN(DimDate[CalendarDate],firstDay,lastDay)))"
+            ],
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "isHidden": true,
+            "lineageTag": "4a3001a7-1e42-575d-a433-39d7e43dac18"
+          },
+          {
+            "name": "K13 Variação de vendas — YTD",
+            "description": "K13; YTD. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YTD]),[Vendas sem impostos]-[_Vendas anterior YTD])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "88533475-ce32-558b-a15d-04eabce9d6db"
+          },
+          {
+            "name": "K14 Crescimento de vendas — YTD",
+            "description": "K14; YTD. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YTD]),IF([_Vendas anterior YTD]>0,DIVIDE([Vendas sem impostos]-[_Vendas anterior YTD],[_Vendas anterior YTD])))",
+            "formatString": "0.0000%;-0.0000%;0.0000%",
+            "lineageTag": "c6e50dc2-2385-58b5-b669-432fe7506099"
+          },
+          {
+            "name": "K15 Variação de lucro — YTD",
+            "description": "K15; YTD. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YTD]),[Lucro comercial registrado]-[_Lucro anterior YTD])",
+            "formatString": "#,0.00;-#,0.00;0.00",
+            "lineageTag": "a8a7b1e2-2611-57f0-8952-d1ab7b039a80"
+          },
+          {
+            "name": "K16 Variação de margem — YTD",
+            "description": "K16; YTD. Mesmos filtros não temporais. Intervalos parciais/descontínuos ou sem comparador retornam BLANK.",
+            "displayFolder": "04 — Comparações",
+            "expression": "IF(NOT ISBLANK([_Anterior início YTD]),IF([Vendas sem impostos]>0 && [_Vendas anterior YTD]>0,100*([Margem comercial registrada]-DIVIDE([_Lucro anterior YTD],[_Vendas anterior YTD]))))",
+            "formatString": "0.0000 \"p.p.\";-0.0000 \"p.p.\";0.0000 \"p.p.\"",
+            "lineageTag": "3229229b-b7d8-5eee-baac-e62870cf0dc6"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Medidas",
+            "mode": "import",
+            "source": {
+              "expression": "#table(type table [_Placeholder = Int64.Type], {{0}})",
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

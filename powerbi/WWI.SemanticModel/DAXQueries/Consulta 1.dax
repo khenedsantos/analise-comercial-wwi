@@ -1,0 +1,361 @@
+// Bem-vindo ao modo de exibição de consulta DAX! Saiba mais sobre consultas DAX em https://aka.ms/dax-queries.
+// Clique com o botão direito do mouse em tabelas, colunas ou medidas no painel de dados para acessar consultas rápidas ou peça ajuda ao Copilot para escrever DAX.
+
+// Selecione "Executar" para experimentar esta consulta DAX de exemplo.
+EVALUATE
+    TOPN(100, 'FactInvoiceLine')
+// Generated from frozen SQL evidence. Execute in Desktop DAX query view AFTER refresh.
+// No SQL execution, no visual filters. Expected money exact; ratios use Stage 4 precision bounds.
+EVALUATE
+UNION(
+(VAR a = [Vendas sem impostos]
+VAR e = 172261341.2000000000
+RETURN ROW("Teste","baseline K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Impostos]
+VAR e = 25782098.2500000000
+RETURN ROW("Teste","baseline K02","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Faturamento com impostos]
+VAR e = 198043439.4500000000
+RETURN ROW("Teste","baseline K03","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Lucro comercial registrado]
+VAR e = 85729180.9000000000
+RETURN ROW("Teste","baseline K04","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*[Margem comercial registrada]
+VAR e = 49.7669298800
+RETURN ROW("Teste","baseline K05","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = [Faturas]
+VAR e = 70510.0000000000
+RETURN ROW("Teste","baseline K06","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Clientes compradores]
+VAR e = 663.0000000000
+RETURN ROW("Teste","baseline K07","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Contas de cobrança]
+VAR e = 263.0000000000
+RETURN ROW("Teste","baseline K08","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Produtos faturados]
+VAR e = 227.0000000000
+RETURN ROW("Teste","baseline K09","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Valor médio do recorte por fatura]
+VAR e = 2443.0767437242
+RETURN ROW("Teste","baseline K10","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.000000000101),"PASS","FAIL"))),
+(VAR a = [Linhas de lucro negativo]
+VAR e = 4626.0000000000
+RETURN ROW("Teste","baseline K17","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*[Percentual de linhas negativas]
+VAR e = 2.0265918900
+RETURN ROW("Teste","baseline K18","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = [Resultado registrado das linhas negativas]
+VAR e = -320493.5500000000
+RETURN ROW("Teste","baseline K19","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Linhas em condições especiais]
+VAR e = 512.0000000000
+RETURN ROW("Teste","baseline K20","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*[Participação das condições especiais]
+VAR e = 0.0127477500
+RETURN ROW("Teste","baseline K21","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = [Linhas faturadas]
+VAR e = 228265
+RETURN ROW("Teste","Linhas faturadas","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = [Negativas não especiais]
+VAR e = 4114
+RETURN ROW("Teste","Negativas não especiais","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*[K12 CR5 — comprador]
+VAR e = 1.0738524800
+RETURN ROW("Teste","CR5 comprador","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = 100*[K12 CR5 — conta]
+VAR e = 63.7540043700
+RETURN ROW("Teste","CR5 conta","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = 100*[K12 CR5 — produto]
+VAR e = 21.0290252800
+RETURN ROW("Teste","CR5 produto","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = 100*[K11 Participação — comprador]
+VAR e = 100
+RETURN ROW("Teste","K11 total","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,2,1),DATE(2016,2,29)))
+VAR e = -189702.4000000000
+RETURN ROW("Teste","leap_yoy K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,2,1),DATE(2016,2,29)))
+VAR e = -4.5217631500
+RETURN ROW("Teste","leap_yoy K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,2,1),DATE(2016,2,29)))
+VAR e = -136957.0500000000
+RETURN ROW("Teste","leap_yoy K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,2,1),DATE(2016,2,29)))
+VAR e = -1.0342713600
+RETURN ROW("Teste","leap_yoy K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,1,1),DATE(2016,5,31)))
+VAR e = -45969.9000000000
+RETURN ROW("Teste","ytd_2016 K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,1,1),DATE(2016,5,31)))
+VAR e = -0.2026967900
+RETURN ROW("Teste","ytd_2016 K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,1,1),DATE(2016,5,31)))
+VAR e = -162311.8500000000
+RETURN ROW("Teste","ytd_2016 K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,1,1),DATE(2016,5,31)))
+VAR e = -0.6156094100
+RETURN ROW("Teste","ytd_2016 K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2014,1,1),DATE(2014,12,31)))
+VAR e = 4222299.2000000000
+RETURN ROW("Teste","annual_2014 K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2014,1,1),DATE(2014,12,31)))
+VAR e = 9.2377137700
+RETURN ROW("Teste","annual_2014 K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2014,1,1),DATE(2014,12,31)))
+VAR e = 2060110.2000000000
+RETURN ROW("Teste","annual_2014 K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2014,1,1),DATE(2014,12,31)))
+VAR e = -0.0864519400
+RETURN ROW("Teste","annual_2014 K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2015,5,1),DATE(2015,5,31)))
+VAR e = -592534.2000000000
+RETURN ROW("Teste","mom K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2015,5,1),DATE(2015,5,31)))
+VAR e = -11.6795442200
+RETURN ROW("Teste","mom K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2015,5,1),DATE(2015,5,31)))
+VAR e = -309779.0500000000
+RETURN ROW("Teste","mom K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2015,5,1),DATE(2015,5,31)))
+VAR e = -0.3178629900
+RETURN ROW("Teste","mom K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,1,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_mom K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,1,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_mom K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,1,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_mom K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — MOM],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,1,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_mom K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — YOY],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,12,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_yoy K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — YOY],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,12,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_yoy K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — YOY],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,12,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_yoy K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — YOY],DATESBETWEEN(DimDate[CalendarDate],DATE(2013,1,1),DATE(2013,12,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","first_yoy K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,5,2),DATE(2016,5,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","partial_month K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([K14 Crescimento de vendas — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,5,2),DATE(2016,5,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","partial_month K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,5,2),DATE(2016,5,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","partial_month K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — AUTO],DATESBETWEEN(DimDate[CalendarDate],DATE(2016,5,2),DATE(2016,5,31)))
+VAR e = BLANK()
+RETURN ROW("Teste","partial_month K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([K13 Variação de vendas — AUTO],TREATAS({DATE(2016,5,1),DATE(2016,5,31)},DimDate[CalendarDate]))
+VAR e = BLANK()
+RETURN ROW("Teste","discontinuous K13","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K14 Crescimento de vendas — AUTO],TREATAS({DATE(2016,5,1),DATE(2016,5,31)},DimDate[CalendarDate]))
+VAR e = BLANK()
+RETURN ROW("Teste","discontinuous K14","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([K15 Variação de lucro — AUTO],TREATAS({DATE(2016,5,1),DATE(2016,5,31)},DimDate[CalendarDate]))
+VAR e = BLANK()
+RETURN ROW("Teste","discontinuous K15","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([K16 Variação de margem — AUTO],TREATAS({DATE(2016,5,1),DATE(2016,5,31)},DimDate[CalendarDate]))
+VAR e = BLANK()
+RETURN ROW("Teste","discontinuous K16","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000201),"PASS","FAIL"))),
+(VAR a = CALCULATE([Vendas sem impostos],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = 4962959.4500000000
+RETURN ROW("Teste","negative_only K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas de lucro negativo],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = 4626.0000000000
+RETURN ROW("Teste","negative_only K17","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Percentual de linhas negativas],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = 100.0000000000
+RETURN ROW("Teste","negative_only K18","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Resultado registrado das linhas negativas],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = -320493.5500000000
+RETURN ROW("Teste","negative_only K19","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas em condições especiais],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = 512.0000000000
+RETURN ROW("Teste","negative_only K20","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Participação das condições especiais],TREATAS({TRUE()},FactInvoiceLine[IsNegative]))
+VAR e = 0.4424668400
+RETURN ROW("Teste","negative_only K21","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Vendas sem impostos],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = 21959.4500000000
+RETURN ROW("Teste","special_only K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas de lucro negativo],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = 512.0000000000
+RETURN ROW("Teste","special_only K17","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Percentual de linhas negativas],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = 100.0000000000
+RETURN ROW("Teste","special_only K18","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Resultado registrado das linhas negativas],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = -45993.5500000000
+RETURN ROW("Teste","special_only K19","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas em condições especiais],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = 512.0000000000
+RETURN ROW("Teste","special_only K20","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Participação das condições especiais],TREATAS({TRUE()},FactInvoiceLine[IsSpecial]))
+VAR e = 100.0000000000
+RETURN ROW("Teste","special_only K21","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Vendas sem impostos],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = 0E-10
+RETURN ROW("Teste","empty_group K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas de lucro negativo],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = 0E-10
+RETURN ROW("Teste","empty_group K17","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Percentual de linhas negativas],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = BLANK()
+RETURN ROW("Teste","empty_group K18","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Resultado registrado das linhas negativas],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = 0E-10
+RETURN ROW("Teste","empty_group K19","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = CALCULATE([Linhas em condições especiais],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = 0E-10
+RETURN ROW("Teste","empty_group K20","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*CALCULATE([Participação das condições especiais],TREATAS({5},DimStockGroup[StockGroupID]))
+VAR e = BLANK()
+RETURN ROW("Teste","empty_group K21","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = MAXX(FILTER(SUMMARIZECOLUMNS(DimProduct[StockItemID],TREATAS({1,2,3,4,5,6},DimProduct[StockItemID]),"__v",[Vendas sem impostos]),DimProduct[StockItemID]=1),[__v])
+VAR e = 141342.5000000000
+RETURN ROW("Teste","selected_products K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*MAXX(FILTER(SUMMARIZECOLUMNS(DimProduct[StockItemID],TREATAS({1,2,3,4,5,6},DimProduct[StockItemID]),"__v",[K11 Participação — produto]),DimProduct[StockItemID]=1),[__v])
+VAR e = 7.6210772900
+RETURN ROW("Teste","selected_products K11","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = 100*MAXX(FILTER(SUMMARIZECOLUMNS(DimProduct[StockItemID],TREATAS({1,2,3,4,5,6},DimProduct[StockItemID]),"__v",[K12 CR5 — produto]),DimProduct[StockItemID]=1),[__v])
+VAR e = 92.3789227000
+RETURN ROW("Teste","selected_products K12","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = MAXX(FILTER(SUMMARIZECOLUMNS(DimBuyer[CustomerID],TREATAS({1,2,3,4,5,6,7,8},DimBuyer[CustomerID]),"__v",[Vendas sem impostos]),DimBuyer[CustomerID]=1),[__v])
+VAR e = 305494.4000000000
+RETURN ROW("Teste","selected_buyers K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*MAXX(FILTER(SUMMARIZECOLUMNS(DimBuyer[CustomerID],TREATAS({1,2,3,4,5,6,7,8},DimBuyer[CustomerID]),"__v",[K11 Participação — comprador]),DimBuyer[CustomerID]=1),[__v])
+VAR e = 13.8164543700
+RETURN ROW("Teste","selected_buyers K11","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = 100*MAXX(FILTER(SUMMARIZECOLUMNS(DimBuyer[CustomerID],TREATAS({1,2,3,4,5,6,7,8},DimBuyer[CustomerID]),"__v",[K12 CR5 — comprador]),DimBuyer[CustomerID]=1),[__v])
+VAR e = 67.5968717900
+RETURN ROW("Teste","selected_buyers K12","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = MAXX(FILTER(SUMMARIZECOLUMNS(DimStockGroup[StockGroupID],TREATAS({7,8},DimStockGroup[StockGroupID]),"__v",[Vendas sem impostos]),DimStockGroup[StockGroupID]=7),[__v])
+VAR e = 4724985.4500000000
+RETURN ROW("Teste","group_union K01","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = 100*MAXX(FILTER(SUMMARIZECOLUMNS(DimStockGroup[StockGroupID],TREATAS({7,8},DimStockGroup[StockGroupID]),"__v",[K11 Participação — grupo]),DimStockGroup[StockGroupID]=7),[__v])
+VAR e = 47.9232847100
+RETURN ROW("Teste","group_union K11","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0.0000000101),"PASS","FAIL"))),
+(VAR a = CALCULATE([Vendas sem impostos],TREATAS({7,8},DimStockGroup[StockGroupID]),TREATAS({1,2,3},DimProduct[StockItemID]))
+VAR e = 287866.2500000000
+RETURN ROW("Teste","group/product intersection","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = (VAR products = CALCULATETABLE(VALUES(BridgeProductGroup[StockItemID]),TREATAS({7,8},BridgeProductGroup[StockGroupID]))
+VAR propagated = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),TREATAS({7,8},DimStockGroup[StockGroupID]))
+VAR explicitUnion = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),REMOVEFILTERS(DimStockGroup),TREATAS(products,FactInvoiceLine[StockItemID]))
+RETURN COALESCE(COUNTROWS(EXCEPT(propagated,explicitUnion)),0)+COALESCE(COUNTROWS(EXCEPT(explicitUnion,propagated)),0))
+VAR e = 0
+RETURN ROW("Teste","bridge IDs 7,8","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = (VAR products = CALCULATETABLE(VALUES(BridgeProductGroup[StockItemID]),TREATAS({1,2,3,4,5,6,7,8,9,10},BridgeProductGroup[StockGroupID]))
+VAR propagated = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),TREATAS({1,2,3,4,5,6,7,8,9,10},DimStockGroup[StockGroupID]))
+VAR explicitUnion = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),REMOVEFILTERS(DimStockGroup),TREATAS(products,FactInvoiceLine[StockItemID]))
+RETURN COALESCE(COUNTROWS(EXCEPT(propagated,explicitUnion)),0)+COALESCE(COUNTROWS(EXCEPT(explicitUnion,propagated)),0))
+VAR e = 0
+RETURN ROW("Teste","bridge IDs 1,2,3,4,5,6,7,8,9,10","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = (VAR products = CALCULATETABLE(VALUES(BridgeProductGroup[StockItemID]),TREATAS({5},BridgeProductGroup[StockGroupID]))
+VAR propagated = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),TREATAS({5},DimStockGroup[StockGroupID]))
+VAR explicitUnion = CALCULATETABLE(VALUES(FactInvoiceLine[InvoiceLineID]),REMOVEFILTERS(DimStockGroup),TREATAS(products,FactInvoiceLine[StockItemID]))
+RETURN COALESCE(COUNTROWS(EXCEPT(propagated,explicitUnion)),0)+COALESCE(COUNTROWS(EXCEPT(explicitUnion,propagated)),0))
+VAR e = 0
+RETURN ROW("Teste","bridge IDs 5","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = COUNTROWS(FactInvoiceLine)-DISTINCTCOUNT(FactInvoiceLine[InvoiceLineID])
+VAR e = 0
+RETURN ROW("Teste","no duplicated grain","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL"))),
+(VAR a = COUNTROWS(DimDate)
+VAR e = 1247
+RETURN ROW("Teste","calendar days","Observado",a,"Esperado",e,
+ "Status",IF(IF(ISBLANK(e),ISBLANK(a),NOT ISBLANK(a) && ABS(a-e)<=0),"PASS","FAIL")))
+)
+ORDER BY [Teste]

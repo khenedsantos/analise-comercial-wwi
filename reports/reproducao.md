@@ -72,3 +72,13 @@ try {
 ```
 
 A interface retorna K01–K21 e contexto. Percentuais já estão em escala 0–100; NULL significa N/A. Filtros e parâmetros estão no [modelo da Etapa 4](modelo_etapa4.md#interface-dos-kpis). Consultas são seriais; não aumente paralelismo para compensar pressão de memória.
+
+## Abrir os artefatos finais do Power BI
+
+Para apenas visualizar o resultado final salvo, abra [analise_comercial_wwi.pbix](../powerbi/analise_comercial_wwi.pbix) no Power BI Desktop. O arquivo contém dados importados; a visualização do estado salvo não exige restaurar o SQL.
+
+Para trabalhar na estrutura versionável, abra [analise_comercial_wwi.pbip](../powerbi/analise_comercial_wwi.pbip), mantendo as pastas WWI.Report e WWI.SemanticModel juntas. Preserve o formato existente; não é necessária migração para TMDL.
+
+Para **refresh**, reproduza a fonte e a camada analytics conforme as seções anteriores e inicie a instância LocalDB WWI_Portfolio. A conexão usa autenticação integrada; a instância pertence ao usuário Windows que a criou. Após concluir o refresh, encerre a instância quando não estiver em uso. Não execute Build sobre analytics já existente.
+
+O teste manual no DAX Query View usa [validacao_desktop.dax](../powerbi/validacao_desktop.dax). O autor confirmou 85 PASS / 0 FAIL no fechamento; uma nova reprodução exige nova conferência. Veja [validação final](validacao_powerbi_final.md) para hash do PBIX e limitações do verificador/schema. Os resultados SQL históricos descritos acima permanecem preservados.
