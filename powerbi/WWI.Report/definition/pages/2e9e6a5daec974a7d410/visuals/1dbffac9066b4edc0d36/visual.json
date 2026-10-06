@@ -1,0 +1,354 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "1dbffac9066b4edc0d36",
+  "position": {
+    "x": 1285.3333334,
+    "y": 150,
+    "z": 4000,
+    "height": 444,
+    "width": 602.6666667,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Rever as condições especiais",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12pt",
+                      "color": "#4B5563",
+                      "fontStyle": "italic"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "5pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "P1 — Reprecificar condições especiais deficitárias",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "16pt",
+                      "fontWeight": "bold",
+                      "color": "#1F2937"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "10pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "EVIDÊNCIA:",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#0F766E",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " as duas condições especiais somaram ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": "512 linhas",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": ", todas negativas, com aproximadamente ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": "−45,99 mil",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": " de resultado. Em Jan–Mai/2016, responderam por cerca de ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": "28% da queda absoluta de lucro",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  },
+                  {
+                    "value": ", apesar do baixo volume de vendas.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "10pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "DECISÃO:",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#0F766E",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " revisar as condições 10% USB Wingtip e 15% USB Tailspin, condicionando sua manutenção à geração de resultado incremental positivo.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "10pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "ACOMPANHAR:",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#0F766E",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " margem sob condição especial, lucro incremental e volume gerado.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "13.5pt",
+                      "color": "#374151"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DFF3F1'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F9F9A'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "66D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "26D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "26D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
