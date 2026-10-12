@@ -1,22 +1,22 @@
-# ValidaÃ§Ã£o final â€” Power BI WWI
+# Validação final — Power BI WWI
 
-Registro de fechamento documental em 06/10/2026. O PBIP foi salvo e validado manualmente pelo autor no Desktop; o PBIX final foi regenerado apÃ³s a padronizaÃ§Ã£o numÃ©rica e a aprovaÃ§Ã£o visual final das oito pÃ¡ginas. O arquivo foi modificado em 06/10/2026 Ã s 16:03:24 (UTCâˆ’03:00). Nesta etapa documental, nenhum arquivo Power BI, SQL, modelo ou script de validaÃ§Ã£o foi alterado; nÃ£o houve refresh ou nova execuÃ§Ã£o DAX/SQL.
+Registro de fechamento documental em 06/10/2026. O PBIP foi salvo e validado manualmente pelo autor no Desktop; o PBIX final foi regenerado após a padronização numérica e a aprovação visual final das oito páginas. O arquivo foi modificado em 06/10/2026 às 16:03:24 (UTC−03:00). Nesta etapa documental, nenhum arquivo Power BI, SQL, modelo ou script de validação foi alterado; não houve refresh ou nova execução DAX/SQL.
 
-## Camadas de evidÃªncia
+## Camadas de evidência
 
 | Camada | Resultado e origem |
 | --- | --- |
-| SQL/modelo dimensional | 607 PASS / 0 FAIL histÃ³ricos; 565 asserts SQL persistidos + 42 verificaÃ§Ãµes complementares |
-| DAX Query View | 85 PASS / 0 FAIL, execuÃ§Ã£o manual confirmada pelo autor usando validacao_desktop.dax |
-| PÃ¡ginas 01â€“08 | AprovaÃ§Ã£o visual manual do autor; oito screenshots finais disponibilizadas |
-| Auditoria final do report layer | PASS COM RESSALVAS: referÃªncias, metadados, canvas, queries, filtros, escopo e schema auxiliar |
-| Esta etapa | ConferÃªncia do tamanho/hash do PBIX, cÃ³pia idÃªntica das imagens, links e preservaÃ§Ã£o dos arquivos protegidos |
+| SQL/modelo dimensional | 607 PASS / 0 FAIL históricos; 565 asserts SQL persistidos + 42 verificações complementares |
+| DAX Query View | 85 PASS / 0 FAIL, execução manual confirmada pelo autor usando validacao_desktop.dax |
+| Páginas 01–08 | Aprovação visual manual do autor; oito screenshots finais disponibilizadas |
+| Auditoria final do report layer | PASS COM RESSALVAS: referências, metadados, canvas, queries, filtros, escopo e schema auxiliar |
+| Esta etapa | Conferência do tamanho/hash do PBIX, cópia idêntica das imagens, links e preservação dos arquivos protegidos |
 
-Fontes: [validaÃ§Ã£o da Etapa 4](validacao_etapa4.md), [evidÃªncia SQL](../data/metadata/stage4-20260930-120408.json), [fechamento SQL](../data/metadata/stage4-closeout.json), [consulta DAX](../powerbi/validacao_desktop.dax). O resultado manual Desktop nÃ£o deve ser confundido com execuÃ§Ã£o automatizada nesta etapa; nÃ£o foi criado um log fictÃ­cio de 85 testes.
+Fontes: [validação da Etapa 4](validacao_etapa4.md), [evidência SQL](../data/metadata/stage4-20260930-120408.json), [fechamento SQL](../data/metadata/stage4-closeout.json), [consulta DAX](../powerbi/validacao_desktop.dax). O resultado manual Desktop não deve ser confundido com execução automatizada nesta etapa; não foi criado um log fictício de 85 testes.
 
 ## Artefatos finais
 
-- [PBIP](../powerbi/analise_comercial_wwi.pbip): estrutura versionÃ¡vel do relatÃ³rio e referÃªncia ao modelo semÃ¢ntico.
+- [PBIP](../powerbi/analise_comercial_wwi.pbip): estrutura versionável do relatório e referência ao modelo semântico.
 - [PBIX](../powerbi/analise_comercial_wwi.pbix): artefato salvo pelo Desktop com dados importados.
 - Tamanho do PBIX conferido: **5.881.598 bytes / 5,609129 MiB**, abaixo do limite preventivo de 95 MiB adotado pelo projeto.
 - SHA-256 conferido:
@@ -25,11 +25,11 @@ Fontes: [validaÃ§Ã£o da Etapa 4](validacao_etapa4.md), [evidÃªncia SQL](..
 59790e542a37df2b3288a09e9beb97e555b2ed2e0f97145e42fd5204b727bee7
 ```
 
-O PBIX nÃ£o foi aberto no Desktop, regravado ou modificado pela preparaÃ§Ã£o tÃ©cnica/documental. Seu conteÃºdo interno nÃ£o foi inspecionado por esta verificaÃ§Ã£o de hash.
+O PBIX não foi aberto no Desktop, regravado ou modificado pela preparação técnica/documental. Seu conteúdo interno não foi inspecionado por esta verificação de hash.
 
-## NavegaÃ§Ã£o e inventÃ¡rio
+## Navegação e inventário
 
-Nove pÃ¡ginas totais; oito visÃ­veis. `00_ValidaÃ§Ã£o` permanece vazia, preservada e oculta por `HiddenInViewMode`. A validaÃ§Ã£o DAX real foi feita no Query View, nÃ£o nessa pÃ¡gina. `activePageName` aponta para Q01.
+Nove páginas totais; oito visíveis. `00_Validação` permanece vazia, preservada e oculta por `HiddenInViewMode`. A validação DAX real foi feita no Query View, não nessa página. `activePageName` aponta para Q01.
 
 1. 01_Q01_Evolucao
 2. 02_Q02_Produtos
@@ -40,25 +40,25 @@ Nove pÃ¡ginas totais; oito visÃ­veis. `00_ValidaÃ§Ã£o` permanece vazia, 
 7. 07_Q07_Mix_Especiais
 8. 08_Recomendacoes_Executivas
 
-A auditoria inventariou **71 visuais e 37 consultas analÃ­ticas**. NÃ£o encontrou visuais fora do canvas, dimensÃµes invÃ¡lidas ou diretÃ³rios de pÃ¡ginas/visuais Ã³rfÃ£os. As sobreposiÃ§Ãµes eram Ã­cones/badges previstos. Pequenas diferenÃ§as de posiÃ§Ã£o aprovadas manualmente foram preservadas. NÃ£o se trata de uma renderizaÃ§Ã£o automatizada.
+A auditoria inventariou **71 visuais e 37 consultas analíticas**. Não encontrou visuais fora do canvas, dimensões inválidas ou diretórios de páginas/visuais órfãos. As sobreposições eram ícones/badges previstos. Pequenas diferenças de posição aprovadas manualmente foram preservadas. Não se trata de uma renderização automatizada.
 
-## PreservaÃ§Ã£o analÃ­tica
+## Preservação analítica
 
-O modelo semÃ¢ntico permaneceu logicamente inalterado; apenas format strings de 22 medidas monetÃ¡rias foram ajustadas para padronizaÃ§Ã£o visual, removendo o literal UM. ExpressÃµes DAX, relacionamentos, tabelas, colunas e Power Query foram preservados. ComparaÃ§Ãµes com os snapshots confirmam essas alteraÃ§Ãµes restritas; SQL e regras analÃ­ticas permanecem intactos. Os overrides locais mantÃªm mi/mil e a precisÃ£o aprovada. O autor confirmou a escala de milhÃµes da Q01 no Desktop. Nesta sincronizaÃ§Ã£o, nenhum arquivo do modelo ou Report foi editado.
+O modelo semântico permaneceu logicamente inalterado; apenas format strings de 22 medidas monetárias foram ajustadas para padronização visual, removendo o literal UM. Expressões DAX, relacionamentos, tabelas, colunas e Power Query foram preservados. Comparações com os snapshots confirmam essas alterações restritas; SQL e regras analíticas permanecem intactos. Os overrides locais mantêm mi/mil e a precisão aprovada. O autor confirmou a escala de milhões da Q01 no Desktop. Nesta sincronização, nenhum arquivo do modelo ou Report foi editado.
 
-As 37 consultas e seus filtros foram conferidos; campos, cÃ¡lculos e filtros permanecem preservados. ALTERAÃ‡ÃƒO MANUAL APROVADA: a tabela detalhada da Q02 (deabd05b83a752df01cb) passou de Ascending para Descending por K15 VariaÃ§Ã£o de lucro â€” YTD, conforme confirmaÃ§Ã£o explÃ­cita do autor. Trata-se de ordenaÃ§Ã£o da apresentaÃ§Ã£o, sem alteraÃ§Ã£o de lÃ³gica analÃ­tica. As demais ordenaÃ§Ãµes foram preservadas, incluindo Top/Bottom da Q02, CR5 e Top 5 da Q04, linhas negativas > 0 da Q05, produtos da Q06 e contextos histÃ³rico/comparÃ¡vel da Q07. Na Q06, vendas > 0 jÃ¡ existia apenas no segundo controle; essa diferenÃ§a foi mantida.
+As 37 consultas e seus filtros foram conferidos; campos, cálculos e filtros permanecem preservados. ALTERAÇÃO MANUAL APROVADA: a tabela detalhada da Q02 (deabd05b83a752df01cb) passou de Ascending para Descending por K15 Variação de lucro — YTD, conforme confirmação explícita do autor. Trata-se de ordenação da apresentação, sem alteração de lógica analítica. As demais ordenações foram preservadas, incluindo Top/Bottom da Q02, CR5 e Top 5 da Q04, linhas negativas > 0 da Q05, produtos da Q06 e contextos histórico/comparável da Q07. Na Q06, vendas > 0 já existia apenas no segundo controle; essa diferença foi mantida.
 
-InvoiceDate permanece a data oficial. Buyer e Billing Account sÃ£o distintos. Margem Ã© razÃ£o agregada. Stock Groups se sobrepÃµem e a ponte nÃ£o pode multiplicar a fato. K12 nÃ£o se aplica a Stock Group. As notas metodolÃ³gicas Q06/Q07 e os textos executivos Q08 foram preservados.
+InvoiceDate permanece a data oficial. Buyer e Billing Account são distintos. Margem é razão agregada. Stock Groups se sobrepõem e a ponte não pode multiplicar a fato. K12 não se aplica a Stock Group. As notas metodológicas Q06/Q07 e os textos executivos Q08 foram preservados.
 
-## LimitaÃ§Ãµes de tooling/schema
+## Limitações de tooling/schema
 
-O schema visual original `2.13.0` estava indisponÃ­vel (HTTP 404). A verificaÃ§Ã£o auxiliar dos 71 visuais usou o schema publicado `2.7.0` em memÃ³ria, sem converter o projeto nem trocar suas declaraÃ§Ãµes. Outros 14 arquivos passaram nos schemas disponÃ­veis; dois recursos de tema foram lidos como JSON vÃ¡lido. Isso nÃ£o equivale a validaÃ§Ã£o integral pelo schema original indisponÃ­vel.
+O schema visual original `2.13.0` estava indisponível (HTTP 404). A verificação auxiliar dos 71 visuais usou o schema publicado `2.7.0` em memória, sem converter o projeto nem trocar suas declarações. Outros 14 arquivos passaram nos schemas disponíveis; dois recursos de tema foram lidos como JSON válido. Isso não equivale a validação integral pelo schema original indisponível.
 
-`verify_preparation.py` continua apresentando a ocorrÃªncia conhecida **KeyError: 'isActive'**. O modelo semÃ¢ntico permaneceu logicamente inalterado, exceto pela apresentaÃ§Ã£o numÃ©rica das format strings monetÃ¡rias; sua validaÃ§Ã£o anterior no Desktop foi confirmada pelo autor. NÃ£o se tentou contornar a limitaÃ§Ã£o alterando o modelo ou o script.
+`verify_preparation.py` continua apresentando a ocorrência conhecida **KeyError: 'isActive'**. O modelo semântico permaneceu logicamente inalterado, exceto pela apresentação numérica das format strings monetárias; sua validação anterior no Desktop foi confirmada pelo autor. Não se tentou contornar a limitação alterando o modelo ou o script.
 
 ## Capturas finais e integridade
 
-Origem: `powerbi/screenshots/`. Destino: `docs/images/powerbi/`. As oito imagens foram copiadas sem recompressÃ£o, redimensionamento, recorte ou ediÃ§Ã£o. Cada hash abaixo corresponde tanto Ã  origem quanto ao destino; a igualdade tambÃ©m foi conferida byte a byte.
+Origem: `powerbi/screenshots/`. Destino: `docs/images/powerbi/`. As oito imagens foram copiadas sem recompressão, redimensionamento, recorte ou edição. Cada hash abaixo corresponde tanto à origem quanto ao destino; a igualdade também foi conferida byte a byte.
 
 | Captura | SHA-256 (origem = destino) |
 | --- | --- |
@@ -71,16 +71,16 @@ Origem: `powerbi/screenshots/`. Destino: `docs/images/powerbi/`. As oito imagens
 | [07_mix_condicoes_especiais.png](../docs/images/powerbi/07_mix_condicoes_especiais.png) | `0f6e8258ae70c13bd7cb2e42a2762ad8e56673690508da3ac9b2df14e01b7f03` |
 | [08_recomendacoes_executivas.png](../docs/images/powerbi/08_recomendacoes_executivas.png) | `81b6ec1b0e721bf5b551ed066e5b7926960505299ccac0c9cfa2237ace16390b` |
 
-## SincronizaÃ§Ã£o e auditoria final
+## Sincronização e auditoria final
 
-As oito capturas finais foram refeitas pelo autor apÃ³s a padronizaÃ§Ã£o numÃ©rica e substituÃ­das nos destinos oficiais. NÃ£o hÃ¡ UM em format strings ativas do Report/SemanticModel. Permanecem referÃªncias documentais/histÃ³ricas e o literal no gerador powerbi/build_model.py, preservado nesta tarefa: regenerar o modelo por esse script pode reintroduzir o formato antigo.
+As oito capturas finais foram refeitas pelo autor após a padronização numérica e substituídas nos destinos oficiais. Não há UM em format strings ativas do Report/SemanticModel. Permanecem referências documentais/históricas e o literal no gerador powerbi/build_model.py, preservado nesta tarefa: regenerar o modelo por esse script pode reintroduzir o formato antigo.
 
-Os 85 PASS / 0 FAIL sÃ£o da execuÃ§Ã£o manual anterior no DAX Query View, nÃ£o de nova execuÃ§Ã£o nesta sincronizaÃ§Ã£o. O PBIX foi apenas medido e submetido a hash, sem abertura, descompactaÃ§Ã£o ou inspeÃ§Ã£o interna.
+Os 85 PASS / 0 FAIL são da execução manual anterior no DAX Query View, não de nova execução nesta sincronização. O PBIX foi apenas medido e submetido a hash, sem abertura, descompactação ou inspeção interna.
 
-## Contexto histÃ³rico e ressalvas de interpretaÃ§Ã£o
+## Contexto histórico e ressalvas de interpretação
 
-Os relatÃ³rios das Etapas 2â€“4 e da publicaÃ§Ã£o inicial conservam expressÃµes como â€œPower BI planejadoâ€, vÃ¡lidas Ã  data daqueles registros. README e documentos finais registram a conclusÃ£o posterior sem sobrescrever evidÃªncias. Os nÃºmeros histÃ³ricos conferidos sÃ£o compatÃ­veis com os controles fornecidos para esta entrega.
+Os relatórios das Etapas 2–4 e da publicação inicial conservam expressões como “Power BI planejado”, válidas à data daqueles registros. README e documentos finais registram a conclusão posterior sem sobrescrever evidências. Os números históricos conferidos são compatíveis com os controles fornecidos para esta entrega.
 
-Os nomes curtos dos acordos na Q08 correspondem aos rÃ³tulos completos na Q07. Preserva-se a ressalva do diagnÃ³stico: o percentual da amostra multiplica o preÃ§o-base, nÃ£o representa desconto convencional. A participaÃ§Ã£o aproximada de 28% na queda de lucro Ã© uma comparaÃ§Ã£o aritmÃ©tica, nÃ£o inferÃªncia causal.
+Os nomes curtos dos acordos na Q08 correspondem aos rótulos completos na Q07. Preserva-se a ressalva do diagnóstico: o percentual da amostra multiplica o preço-base, não representa desconto convencional. A participação aproximada de 28% na queda de lucro é uma comparação aritmética, não inferência causal.
 
-A aprovaÃ§Ã£o visual e os 85 PASS sÃ£o evidÃªncias manuais informadas pelo autor. As screenshots sÃ£o evidÃªncia visual do estado capturado; nÃ£o substituem o teste de todas as interaÃ§Ãµes possÃ­veis. NÃ£o houve publicaÃ§Ã£o, commit ou push nesta etapa.
+A aprovação visual e os 85 PASS são evidências manuais informadas pelo autor. As screenshots são evidência visual do estado capturado; não substituem o teste de todas as interações possíveis. Não houve publicação, commit ou push nesta etapa.

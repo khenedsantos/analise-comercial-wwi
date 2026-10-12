@@ -188,3 +188,9 @@ PBIX: 5.881.598 bytes (5,609129 MiB). SHA-256:
 ```
 
 Os documentos das etapas anteriores registram o estado à época, inclusive entregas então planejadas. A documentação final acima registra sua conclusão posterior, sem reescrever evidências históricas.
+
+## Decisões de desenvolvimento e evidências
+
+O [índice de evidências](reports/development_decisions_and_evidence.md) conecta decisões,
+implementações e validações às suas referências, distinguindo evidência técnica de
+atribuição individual de contribuições.
