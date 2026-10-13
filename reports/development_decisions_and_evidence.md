@@ -2,8 +2,7 @@
 
 Índice de referências do case sintético WWI. **A — Comprovada:** há código, teste,
 relatório ou artefato identificável. **B — Parcial:** implementação verificável,
-mas execução, proveniência ou atribuição incompleta. **C — Não comprovada:** requer
-confirmação pessoal ou evidência adicional. As classes não medem autoria humana exclusiva.
+mas execução ou proveniência incompleta. **C — Não comprovada:** requer evidência adicional.
 
 ## 1. Evolução e limites do histórico Git
 
@@ -12,7 +11,7 @@ introduz o modelo analítico validado; [188298f](https://github.com/khenedsantos
 acrescenta o Power BI. São os dois commits existentes na auditoria documental.
 **B — Processo:** os [relatórios de etapas](modelo_etapa4.md) e os registros em
 [data/metadata](../data/metadata/) oferecem detalhes intermediários, mas o Git não
-isola cada tentativa ou correção. Metadados de commit não identificam quem concebeu uma solução.
+isola cada tentativa ou correção.
 
 ## 2. Decisões de modelagem dimensional
 
@@ -81,18 +80,8 @@ financeiro realizado, ganho recuperável estimado ou efeito causal demonstrado.
   em 2.7. Não são problemas resolvidos. O gerador preservado pode reintroduzir a
   formatação monetária antiga; não se deve confundir geração com o artefato final salvo.
 
-## 7. Evidência técnica, contribuição pessoal e IA
+## 7. Rastreabilidade
 
 Implementação, execução registrada e justificativa metodológica são evidências
-distintas. **C — Atribuição individual:** o repositório não discrimina quem propôs,
-revisou ou implementou cada decisão. Experiência profissional e domínio técnico não
-são demonstrados apenas pelos artefatos. O [roteiro de estudo](technical_interview_preparation.md)
-indica demonstrações possíveis, sem respostas pessoais inventadas.
-
-### Assistência de inteligência artificial
-
-Este projeto foi desenvolvido com apoio de ferramentas de inteligência artificial durante o processo de desenvolvimento e documentação.
-
-O repositório disponibiliza implementações, decisões metodológicas, testes, resultados e limitações que permitem examinar tecnicamente a solução.
-
-A utilização dessas ferramentas não deve ser interpretada como desenvolvimento exclusivamente manual, assim como os registros do repositório não permitem atribuir individualmente cada decisão ou implementação.
+distintas. O [roteiro de estudo](technical_interview_preparation.md) reúne perguntas,
+demonstrações técnicas e referências para consulta.

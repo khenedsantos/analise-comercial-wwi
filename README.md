@@ -192,5 +192,4 @@ Os documentos das etapas anteriores registram o estado à época, inclusive entr
 ## Decisões de desenvolvimento e evidências
 
 O [índice de evidências](reports/development_decisions_and_evidence.md) conecta decisões,
-implementações e validações às suas referências, distinguindo evidência técnica de
-atribuição individual de contribuições.
+implementações e validações às suas referências e limites de evidência.

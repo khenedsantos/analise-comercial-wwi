@@ -1,8 +1,7 @@
 # Preparação para discussão técnica
 
-Roteiro de estudo das decisões implementadas. Não constitui resposta pronta nem
-atestado de domínio do autor. Cada demonstração pode usar um exemplo pequeno e a
-leitura dos artefatos existentes, sem reconstruir o banco ou executar cargas.
+Roteiro de estudo das decisões implementadas. Cada demonstração pode usar um exemplo
+pequeno e a leitura dos artefatos existentes, sem reconstruir o banco ou executar cargas.
 
 | Pergunta | Demonstração esperada | Referências |
 |---|---|---|
@@ -18,7 +17,5 @@ leitura dos artefatos existentes, sem reconstruir o banco ou executar cargas.
 | O que os dados sintéticos não permitem concluir? | Explicar ausência de causalidade e impacto realizado; distinguir mês indisponível de zero e variação de mix de decomposição causal da margem. | [Contrato](contrato_analitico_etapa3.md), [análise executiva](analise_executiva_powerbi.md) |
 | Como transformar achados em recomendações defensáveis? | Relacionar perda de margem, SKUs negativos e concentração a investigações; indicar custos, contratos e dados operacionais necessários antes de agir. | [Recomendações](analise_executiva_powerbi.md), [README](../README.md) |
 
-Ao discutir contribuição pessoal, separar o que está comprovado do que depende de
-relato confirmado. Explicar escolhas com evidências não exige alegar autoria exclusiva.
-O [índice de evidências](development_decisions_and_evidence.md) registra os limites
-de rastreabilidade e a assistência de IA, sem atribuir tarefas individuais.
+O [índice de evidências](development_decisions_and_evidence.md) reúne referências
+e limites de rastreabilidade.

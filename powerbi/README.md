@@ -55,4 +55,4 @@ Os 14 controles obrigatórios estão incluídos na consulta (margem usa valor pr
 
 Referências: [modelo SQL](../reports/modelo_etapa4.md), [contrato normativo](../reports/contrato_analitico_etapa3.md), [validação SQL histórica](../reports/validacao_etapa4.md), [formato oficial PBIP](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview), [modelo textual TMSL/model.bim](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-dataset).
 
-Depois do aceite técnico, Khened + ChatGPT definirão visuais, UX, análise Q01–Q07 e interpretações. Sem commit, push, PR ou mudança da main nesta preparação.
+Depois do aceite técnico, serão definidos visuais, UX, análise Q01–Q07 e interpretações. Sem commit, push, PR ou mudança da main nesta preparação.
