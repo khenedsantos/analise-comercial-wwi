@@ -83,5 +83,4 @@ financeiro realizado, ganho recuperável estimado ou efeito causal demonstrado.
 ## 7. Rastreabilidade
 
 Implementação, execução registrada e justificativa metodológica são evidências
-distintas. O [roteiro de estudo](technical_interview_preparation.md) reúne perguntas,
-demonstrações técnicas e referências para consulta.
+distintas.
